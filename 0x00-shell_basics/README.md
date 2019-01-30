@@ -1,1 +1,19 @@
-# holberton-system_engineering-devops
+0-current_working_directory = script that prints absolute path
+1-listit                    = script that lists content of current directory
+2-bring_me_home             = script that changes working dir to user's home dir
+3-listfiles                 = script that displays current dir contents in a long format
+4-listmorefiles             = script that displays hidden files
+5-listfilesdigitonly        = displays long, user and group ID's numerically, and hidden files
+6-firstdirectory            = creates dir named holberton in /tmp
+7-movethatfil               = move betty from /tmp to /tmp/holberton
+8-firstdelete               = delete betty
+9-firstdirdeletion          = delete dir holberton from /tmp
+10-back                     = change working dir to previous
+11-lists                    = list all files + hidden + parent + /boot
+12-file-type                = prints type of file name iamafile in /tmp
+13-symbolic-link            = create a symbol link to /bin/ls named __ls__
+14-copy.html                = updates all HTML from current dir to parent dir
+15-lets_move                = move all files beginning with uppercase
+16-clean_emacs              = deletes all files in current dir that ends with ~
+17-tree                     = creates a tree of dirs
+18-commas                   = list all files and dirs of current dir separated by commas, with dirs ending with /
