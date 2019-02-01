@@ -18,4 +18,4 @@ This is a repo for basic shell commands
 - [x] 15-lets_move - move all files beginning with uppercase
 - [x] 16-clean_emacs - deletes all files in current dir that ends with ~
 - [x] 17-tree - creates a tree of dirs
-18-commas                   = list all files and dirs of current dir separated by commas, with dirs ending with /
+- [x] 18-commas - list all files and dirs of current dir separated by commas, with dirs ending with /
