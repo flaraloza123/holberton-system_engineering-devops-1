@@ -1,4 +1,6 @@
-0-current_working_directory = script that prints absolute path
+# 0x00-shell_basics
+This is a repo for basic shell commands
+- [x] 0-current_working_directory = script that prints absolute path
 1-listit                    = script that lists content of current directory
 2-bring_me_home             = script that changes working dir to user's home dir
 3-listfiles                 = script that displays current dir contents in a long format
