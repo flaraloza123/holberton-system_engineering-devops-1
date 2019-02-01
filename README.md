@@ -1,2 +1,2 @@
 # holberton-system_engineering-devops
-Folder for Devops projects at Holberton
+Folder for dev-ops projects at Holberton
