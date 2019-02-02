@@ -1,12 +1,6 @@
-line 1
-line 2
-line 3
-line 4
-line 5
-line 6
-line 7
-line 8
-line 9
-line 10
-line 11
-line 11
+#0x00-shell_basics
+This is a repo for shell redirections
+- [x] 0-hello_world - prints "Hello, World"
+- [x] 1-confused smiley - displays "(Ôo)'
+- [x] 2-hellofile - display content of /etc/passwd
+- [x] 3-
