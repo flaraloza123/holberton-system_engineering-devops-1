@@ -1,3 +1,2 @@
 #!/bin/bash
 sort | cut -d$'\t' -f1 | uniq -c | sort -nr | head -11 | rev | cut -d' ' -f1 | rev
-#sort -d | cut -d$'\t' -f1 | uniq -u
