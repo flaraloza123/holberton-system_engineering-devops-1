@@ -3,4 +3,27 @@ This is a repo for shell redirections
 - [x] 0-hello_world - prints "Hello, World"
 - [x] 1-confused smiley - displays "(Ôo)'
 - [x] 2-hellofile - display content of /etc/passwd
-- [x] 3-
+- [x] 3-twofiles - display content of /etc/passwd and /etc/hosts
+- [x] 4-lastlines - display last 10 lines of /etc/passwd
+- [x] 5-firstlines - display first 10 lines of /etc/passwd
+- [x] 6-thirdline - display the third line of the file iacta
+- [x] 7-file - shell script that creates a file called "\*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:)"
+- [x] 8-cwd_state - writes into ls_cwd_content the result of ls -la
+- [x] 9-duplicate_last_line - duplicate the last line od the file iacta
+- [x] 10-no_more_js - deletes all .js files in current dir and subdir
+- [x] 11-directories - count all dir and subdir of current
+- [x] 12-newest_files - display 10 newest files of current
+- [x] 13-unique - prints only words that appear once
+- [x] 14-findthatword - display lines containing "root"
+- [x] 15-countthatword - display number pf lines that contain "bin" in /etc/passwd
+- [x] 16-whatisnext - display lines containing "root" and 3 lines after
+- [x] 17-hidethisword - display all the lines that don't contain "bin" in /etc/passwd
+- [x] 18-letteronly - display all lines of /etc/passwd that start with a letter
+- [x] 19-AZ - replace Ac with Ze
+- [x] 20-hiago - remove letters cC
+- [x] 21-esreveR - reverse input
+- [x] 22-users_and_homes - display all users and home dir, sorted by users
+- [x] 100-empty_casks - find all empty files and dirs and display them; +hidden
+- [x] 101-gifs - list all .gif in cur dir and subdir; sort by alpha, ignore case
+- [x] 102-acrostic - decode acrostic that use the first letter of each line
+- [x] 103-the_biggest_fan - parses TSV file by most requests, list top 11 users
