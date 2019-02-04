@@ -1,4 +1,4 @@
-#0x00-shell_basics
+# 0x02-shell_redirections
 This is a repo for shell redirections
 - [x] 0-hello_world - prints "Hello, World"
 - [x] 1-confused smiley - displays "(Ôo)'
