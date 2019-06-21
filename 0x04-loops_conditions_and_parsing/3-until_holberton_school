@@ -2,7 +2,7 @@
 # This script displays "Holberton School" 10 times
 
 x=10
-until [  $x -lt 1 ]
+until [ $x -lt 1 ]
 do
 	echo "Holberton School"
 	((x-=1))
