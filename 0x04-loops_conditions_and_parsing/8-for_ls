@@ -5,7 +5,7 @@
 # Where only the part of the name after the first dash is displayed
 # (refer to the example)
 
-for filename in ./*;
+for filename in *;
 do
 	echo "$filename" | cut -d'-' -f2
 done
