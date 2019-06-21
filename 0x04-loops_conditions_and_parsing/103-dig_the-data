@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # This script that groups visitors by IP and HTTP status code, and displays this data.
 
-awk '{print $1, $9}' 'apache-access.log' | sort -n | uniq -c | sort -nr
+awk '{print $1, $9}' 'apache-access.log' | sort -n | uniq -c | sort -nr | awk '{printf "%4s %s %s\n", $1, $2, $3}'
