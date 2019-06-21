@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # This script displays "Holberton School" 10 times
 
-COUNTER=10
-until [  $COUNTER -lt 1 ];
+x=10
+until [  $x -lt 1 ]
 do
 	echo "Holberton School"
-	let COUNTER-=1
+	((x-=1))
 done
