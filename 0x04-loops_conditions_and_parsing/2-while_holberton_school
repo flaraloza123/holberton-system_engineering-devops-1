@@ -1,5 +1,5 @@
-	echo "$i"#!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times
+#!/usr/bin/env bash
+# This script displays "Holberton School" 10 times
 
 x=1
 while [ $x -le 10 ]
