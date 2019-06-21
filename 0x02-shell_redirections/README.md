@@ -1,29 +1,61 @@
-# 0x02-shell_redirections
-This is a repo for shell redirections
-- [x] 0-hello_world - prints "Hello, World"
-- [x] 1-confused smiley - displays "(Ôo)'
-- [x] 2-hellofile - display content of /etc/passwd
-- [x] 3-twofiles - display content of /etc/passwd and /etc/hosts
-- [x] 4-lastlines - display last 10 lines of /etc/passwd
-- [x] 5-firstlines - display first 10 lines of /etc/passwd
-- [x] 6-thirdline - display the third line of the file iacta
-- [x] 7-file - shell script that creates a file called "\*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:)"
-- [x] 8-cwd_state - writes into ls_cwd_content the result of ls -la
-- [x] 9-duplicate_last_line - duplicate the last line od the file iacta
-- [x] 10-no_more_js - deletes all .js files in current dir and subdir
-- [x] 11-directories - count all dir and subdir of current
-- [x] 12-newest_files - display 10 newest files of current
-- [x] 13-unique - prints only words that appear once
-- [x] 14-findthatword - display lines containing "root"
-- [x] 15-countthatword - display number pf lines that contain "bin" in /etc/passwd
-- [x] 16-whatisnext - display lines containing "root" and 3 lines after
-- [x] 17-hidethisword - display all the lines that don't contain "bin" in /etc/passwd
-- [x] 18-letteronly - display all lines of /etc/passwd that start with a letter
-- [x] 19-AZ - replace Ac with Ze
-- [x] 20-hiago - remove letters cC
-- [x] 21-esreveR - reverse input
-- [x] 22-users_and_homes - display all users and home dir, sorted by users
-- [x] 100-empty_casks - find all empty files and dirs and display them; +hidden
-- [x] 101-gifs - list all .gif in cur dir and subdir; sort by alpha, ignore case
-- [x] 102-acrostic - decode acrostic that use the first letter of each line
-- [x] 103-the_biggest_fan - parses TSV file by most requests, list top 11 users
+# 0x02. Shell, I/O Redirections and filters
+
+## Description
+What you should learn from this project:
+
+* What do the commands head, tail, find, wc, sort, uniq, grep, tr do
+* How to redirect standard output to a file
+* How to get standard input from a file instead of the keyboard
+* How to send the output from one program to the input of another program
+* How to combine commands and filters with redirections
+
+---
+
+### [0. Hello World](./0-hello_world)
+* Write a script that prints “Hello, World”, followed by a new line to the standard output.
+
+
+### [1. Confused smiley](./1-confused_smiley )
+* Write a script that displays a confused smiley "(Ôo)'.
+
+
+### [2. Let's display a file](./2-hellofile)
+* Display the content of the /etc/passwd file.
+
+
+### [3. What about 2?](./3-twofiles)
+* Display the content of /etc/passwd and /etc/hosts
+
+
+### [4. Last lines of a file](./4-lastlines)
+* Display the last 10 lines of /etc/passwd
+
+
+### [5. I'd prefer the first ones actually](./5-firstlines)
+* Display the first 10 lines of /etc/passwd
+
+
+### [6. Line #2](./6-third_line)
+* Write a script that displays the third line of the file iacta.
+
+
+### [7. It is a good file that cuts iron without making a noise](./7-file)
+* Write a shell script that creates a file named exactly \*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:) containing the text Holberton School  ending by a new line.
+
+
+### [8. Save current state of directory](./8-cwd_state )
+* Write a script that writes into the file ls_cwd_content the result of the command ls -la. If the file ls_cwd_content already exists, it should be overwritten. If the file ls_cwd_content does not exist, create it.
+
+
+### [9. Duplicate last line](./9-duplicate_last_line )
+* Write a script that duplicates the last line of the file iacta
+
+
+### [10. No more javascript](./10-no_more_js )
+* Write a script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.
+
+
+### [11. Don't just count your directories, make your directories count](./11-directories)
+* Write a script that counts the number of directories and sub-directories in the current directory.
+
+

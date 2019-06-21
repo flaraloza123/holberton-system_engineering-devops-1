@@ -1,21 +1,14 @@
-# 0x00-shell_basics
-This is a repo for basic shell commands
-- [x] 0-current_working_directory - prints absolute path
-- [x] 1-listit - lists content of current directory
-- [x] 2-bring_me_home - changes working dir to user's home dir
-- [x] 3-listfiles - displays current dir contents in a long format
-- [x] 4-listmorefiles - displays hidden files
-- [x] 5-listfilesdigitonly - displays long, user and group ID's numerically, and hidden files
-- [x] 6-firstdirectory - creates dir named holberton in /tmp
-- [x] 7-movethatfil - move betty from /tmp to /tmp/holberton
-- [x] 8-firstdelete - delete betty
-- [x] 9-firstdirdeletion - delete dir holberton from /tmp
-- [x] 10-back - change working dir to previous
-- [x] 11-lists - list all files + hidden + parent + /boot
-- [x] 12-file-type - prints type of file name iamafile in /tmp
-- [x] 13-symbolic-link - create a symbol link to /bin/ls named __ls__
-- [x] 14-copy.html - updates all HTML from current dir to parent dir
-- [x] 15-lets_move - move all files beginning with uppercase
-- [x] 16-clean_emacs - deletes all files in current dir that ends with ~
-- [x] 17-tree - creates a tree of dirs
-- [x] 18-commas - list all files and dirs of current dir separated by commas, with dirs ending with /
+# 0x00. Shell, basics
+
+## Description
+What you should learn from this project:
+
+* What does RTFM mean?
+* What is a Shebang
+
+---
+
+### [0. Where am I?](./0-current_working_directory)
+* Write a script that prints the absolute path name of the current working directory.
+
+
