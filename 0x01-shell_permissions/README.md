@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Learning Objectives](#Learning)
+- [Learning Objectives](#learningobjectives)
 - [Usage](#usage)
 - [Tasks](#tasks)
 
