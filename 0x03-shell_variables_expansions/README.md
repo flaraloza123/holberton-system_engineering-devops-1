@@ -40,7 +40,7 @@ Other help pages
 ---
 ## Tasks
 
-### [0. <o>](./0-alias )
+### [0. o](./0-alias )
 * Create a script that creates an alias.
   * Name: ls
   * Value: rm *
