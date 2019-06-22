@@ -62,8 +62,23 @@ LTS
 ```sh
 $ ./0-current_working_directory
 /Users/holbertonschool/holbertonschool-sysadmin_devops/0x00-shell_basics
-$
 ```
 
 ### [1. What’s in there?](./1-listit)
 * Display the contents list of your current directory.
+```sh
+$ ./1-listit
+Applications    Documents   Dropbox Movies Pictures
+Desktop Downloads   Library Music Public
+```
+### [2. There is no place like home](./2-bring_me_home)
+```sh
+julien@ubuntu:/tmp$ pwd
+/tmp
+julien@ubuntu:/tmp$ echo $HOME
+/home/julien
+julien@ubuntu:/tmp$ source ./2-bring_me_home
+julien@ubuntu:~$ pwd
+/home/julien
+```
+
