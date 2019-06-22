@@ -1,11 +1,5 @@
 # 0x00. Shell, basics
 
-## Table of Contents
-
-- [Learning Objectives](#learningobjectives)
-- [Usage](#usage)
-- [Tasks](#tasks)
-
 ## Learning Objectives
 
 General
