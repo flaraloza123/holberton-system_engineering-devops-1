@@ -1,7 +1,6 @@
 # 0x00. Shell, basics
 
-## Description
-What you should learn from this project:
+## Learning Objectives
 
 General
 * What does RTFM mean?
