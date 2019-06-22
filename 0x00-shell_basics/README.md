@@ -55,7 +55,12 @@ Keyboard Shortcuts for Bash
 
 LTS
 * What does LTS mean?
+
+## Usage
+* All files were created and compiled on Ubuntu 14.04.4 LTS
+
 ---
+## Tasks
 
 ### [0. Where am I?](./0-current_working_directory)
 * Write a script that prints the absolute path name of the current working directory.
@@ -282,3 +287,24 @@ ubuntu@ip-172-31-63-244:~/holbertonschool$ ./18-commas
 
 ### [19. File type: Holberton](./holberton.mgc)
 * Create a magic file holberton.mgc that can be used with the command file to detect Holberton data files. Holberton data files always contain the string HOLBERTON at offset 0.
+```sh
+ubuntu@ip-172-31-63-244:/tmp/magic$ cp /bin/ls .
+ubuntu@ip-172-31-63-244:/tmp/magic$ ls -la
+total 268
+drwxrwxr-x  2 ubuntu ubuntu   4096 Sep 20 02:44 .
+drwxrwxrwt 11 root   root   139264 Sep 20 02:44 ..
+-rw-r--r--  1 ubuntu ubuntu    496 Sep 20 02:42 holberton.mgc
+-rwxr-xr-x  1 ubuntu ubuntu 110080 Sep 20 02:43 ls
+-rw-rw-r--  1 ubuntu ubuntu     50 Sep 20 02:06 thisisanholbertonfile
+-rw-rw-r--  1 ubuntu ubuntu     30 Sep 20 02:16 thisisatextfile
+ubuntu@ip-172-31-63-244:/tmp/magic$ file --mime-type -m holberton.mgc *
+holberton.mgc:         application/octet-stream
+ls:                    application/octet-stream
+thisisanholbertonfile: Holberton
+thisisatextfile:       text/plain
+ubuntu@ip-172-31-63-244:/tmp/magic$ file -m holberton.mgc *
+holberton.mgc:         data
+ls:                    data
+thisisanholbertonfile: Holberton data
+thisisatextfile:       ASCII text
+```
