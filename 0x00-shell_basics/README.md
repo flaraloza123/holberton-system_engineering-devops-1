@@ -72,6 +72,8 @@ Applications    Documents   Dropbox Movies Pictures
 Desktop Downloads   Library Music Public
 ```
 ### [2. There is no place like home](./2-bring_me_home)
+* Write a script that changes the working directory to the user’s home directory.
+  * You are not allowed to use any shell variables
 ```sh
 julien@ubuntu:/tmp$ pwd
 /tmp
