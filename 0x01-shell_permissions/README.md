@@ -1,5 +1,7 @@
 # 0x01. Shell, permissions
 
+---
+
 ## Table of Contents
 
 - [Learning Objectives](#learningobjectives)
