@@ -1,6 +1,7 @@
 # 0x00. Shell, basics
 
 ## Learning Objectives
+
 General
 * What does RTFM mean?
 * What is a Shebang
@@ -55,6 +56,7 @@ LTS
 * What does LTS mean?
 
 ## Usage
+
 * All files were created and compiled on Ubuntu 14.04.4 LTS
 
 ---
