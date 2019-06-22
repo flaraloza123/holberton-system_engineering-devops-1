@@ -1,7 +1,6 @@
 # 0x00. Shell, basics
 
 ## Learning Objectives
-
 General
 * What does RTFM mean?
 * What is a Shebang
