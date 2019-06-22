@@ -1,11 +1,5 @@
 # 0x02. Shell, I/O Redirections and filters
 
-## Table of Contents
-
-- [Learning Objectives](#learningobjectives)
-- [Usage](#usage)
-- [Tasks](#tasks)
-
 ## Learning Objectives
 
 Shell, I/O Redirection
