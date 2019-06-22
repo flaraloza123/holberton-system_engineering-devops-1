@@ -1,8 +1,14 @@
 # 0x01. Shell, permissions
 
-## Description
-What you should learn from this project:
+## Table of Contents
 
+- [Learning Objectives](#Learning Objectives)
+- [Usage](#usage)
+- [Tasks](#tasks)
+
+## Learning Objectives
+
+Permissions
 * What do the commands chmod, sudo, su, chown, chgrp do
 * Linux file permissions
 * How to represent each of the three sets of permissions (owner, group, and other) as a single digit
@@ -11,7 +17,19 @@ What you should learn from this project:
 * How to run a command with root privileges
 * How to change user ID or become superuser
 
+Other Man Pages
+* How to create a user
+* How to create a group
+* How to print real and effective user and group IDs
+* How to print the groups a user is in
+* How to print the effective userid
+
+## Usage
+
+* All files were created and compiled on Ubuntu 14.04.4 LTS
+
 ---
+## Tasks
 
 ### [0. My name is Betty](./0-iam_betty)
 * Create a script that changes your user ID to betty.
