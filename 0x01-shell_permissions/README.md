@@ -1,5 +1,4 @@
 # 0x01. Shell, permissions
-
 ---
 
 ## Table of Contents
