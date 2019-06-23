@@ -1,4 +1,9 @@
 # System Engineering and Devops
+
+<p align="center">
+  <img src="http://www.holbertonschool.com/holberton-logo.png">
+</p>
+
 This repository contains programs written in Bash for the System Engineering and Devops curriculum at Holberton School.
 
 | Project                                      | Description |
