@@ -315,7 +315,7 @@ I am alive!
   * For every zombie process created, it displays Zombie process created, PID: ZOMBIE_PID
   * Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
   * When your code is done creating the parent process and the zombies, use the function bellow
-```sh
+```c
 int infinite_while(void)
 {
     while (1)
