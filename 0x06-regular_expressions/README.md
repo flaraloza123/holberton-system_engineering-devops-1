@@ -1,10 +1,10 @@
 # 0x06. Regular expression
 
-## Description
-What you should learn from this project:
+## Learning Objectives
+General
 * For this project, you have to build your regular expression using Oniguruma, a regular expression library that which is used by Ruby by default. Note that other regular expression libraries sometimes have different properties.
 
-Because the focus of this exercise is to play with regular expressions (regex), here is the Ruby code that you should use, just replace the regexp part, meaning the code in between the //:
+* Because the focus of this exercise is to play with regular expressions (regex), here is the Ruby code that you should use, just replace the regexp part, meaning the code in between the //:
 
 ```sh
 sylvain@ubuntu$ cat example.rb
@@ -17,7 +17,13 @@ sylvain@ubuntu$ ./example.rb 127.0.0.1
 127.0.0.1
 ```
 
+## Usage
+
+* All files were created and compiled on Ubuntu 14.04.4 LTS
+* All files are linted with Shellcheck.
+
 ---
+## Tasks
 
 ### [0. Simply matching Holberton](./0-simply_match_holberton.rb)
 <p align="center">
@@ -92,6 +98,7 @@ $
   * The sender phone number or name (including country code if present)
   * The receiver phone number or name (including country code if present)
   * The flags that were used
+
 ```sh
 $ ./100-textme.rb 'Feb 1 11:00:00 ip-10-0-0-11 mdr: 2016-02-01 11:00:00 Receive SMS [SMSC:SYBASE1] [SVC:] [ACT:] [BINF:] [FID:] [from:Google] [to:+16474951758] [flags:-1:0:-1:0:-1] [msg:127:This planet has - or rather had - a problem, which was this: most of the people on it were unhappy for pretty much of the time.] [udh:0:]'
 Google,+16474951758,-1:0:-1:0:-1
@@ -109,8 +116,6 @@ $ ./100-textme.rb 'Feb 1 11:00:00 ip-10-0-64-11 mdr: 2016-02-01 11:00:00 Sent SM
 ```
 
 ### [9. Pass LinkedIn technical interview level0](./101-passed_linkedin_regex_challenge.jpg)
-* Requirements:
-
 * Solve LinkedIn regex puzzle: https://engineering.linkedin.com/puzzle
 
 ---
