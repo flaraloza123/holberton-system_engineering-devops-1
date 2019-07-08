@@ -14,6 +14,8 @@ This repository contains programs written in Bash for the System Engineering and
 | [0x04. Loops, conditions and parsing](./0x04-loops_conditions_and_parsing) | Intermediate scripting with loops and conditionals |
 | [0x05. Processes and signals](./0x05-processes_and_signals) | Process management with kill and trap |
 | [0x06. Regular Expressions](./0x06-) | Building regular expressions using Oniguruma |
+| [0x07. Networking Basics](./0x07-networking_basics)| OSI Model/Data transfer protocols |
+| [0x08. Networking Basics 2](./0x08-networking_basics_2)| Placeholder text | 
 
 ## Author
 * __Tu Vo__
