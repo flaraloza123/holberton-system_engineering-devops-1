@@ -35,6 +35,12 @@ Requirements:
     * Downtime when maintenance needed (like deploying new code web server needs to be restarted)
     * Cannot scale if too much incoming traffic
 
+
+<p align="center">
+  <img src="https://i.imgur.com/11WzX3i.png">
+</p>
+
+
 ### [1. Distributed web infrastructure](./1-distributed_web_infrastructure)
 * On a whiteboard, design a three server web infrastructure that hosts the website www.foobar.com.
 
@@ -58,6 +64,12 @@ Requirements:
     * Security issues (no firewall, no HTTPS)
     * No monitoring
 
+
+<p align="center">
+  <img src="https://i.imgur.com/6bTZOcI.png">
+</p>
+
+
 ### [2. Secured and monitored web infrastructure](./2-secured_and_monitored_web_infrastructure)
 * On a whiteboard, design a three server web infrastructure that hosts the website www.foobar.com, it must be secured, serve encrypted traffic, and be monitored.
 
@@ -79,6 +91,12 @@ Requirements:
     * Why having only one MySQL server capable of accepting writes is an issue
     * Why having servers with all the same components (database, web server and application server) might be a problem
 
+
+<p align="center">
+  <img src="https://i.imgur.com/9yScYsJ.png">
+</p>
+
+
 ### [3. Scale up](./3-scale_up)
 
 Requirements:
@@ -89,6 +107,12 @@ Requirements:
     * Split components (web server, application server, database) with their own server
   * You must be able to explain some specifics about this infrastructure:
     * For every additional element, why you are adding it
+
+
+<p align="center">
+  <img src="https://i.imgur.com/GAELiDU.png">
+</p>
+
 
 ---
 
