@@ -4,9 +4,14 @@
 
 How to use Puppet
 
-## Tasks
+## Usage
+
+* All files were created and compiled on Ubuntu 14.04.4 LTS
+* All files are linted with Puppet Lint 2.1.1.
 
 ---
+
+## Tasks
 
 ### [0. Create a file](./0-create_a_file.pp)
 * Using Puppet, create a file in /tmp.
