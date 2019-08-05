@@ -48,7 +48,7 @@ Notice: Finished catalog run in 2.83 seconds
 ```sh
 root@d391259bf577:/# gem list
 ```
-```
+```ruby
 *** LOCAL GEMS ***
 
 puppet-lint (2.1.1)
@@ -67,8 +67,6 @@ Notice: Compiled catalog for d391259bf577.hsd1.ca.comcast.net in environment pro
 Notice: /Stage[main]/Main/Exec[killmenow]/returns: executed successfully
 Notice: Finished catalog run in 0.10 seconds
 ```
-
----
 
 ## Author
 * **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
