@@ -16,6 +16,7 @@ This repository contains programs written in Bash for the System Engineering and
 | [0x06. Regular Expressions](./0x06-) | Building regular expressions using Oniguruma |
 | [0x07. Networking Basics](./0x07-networking_basics)| OSI Model/Data transfer protocols |
 | [0x08. Networking Basics 2](./0x08-networking_basics_2)| Localhost, IPv4 and /etc/hosts | 
+| [0x09. Web Infrastructure Design](./0x09-web_infrastructure_design)| Designing secure and monitored server systems | 
 
 ## Author
 * __Tu Vo__
