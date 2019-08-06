@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 # install and configure an Nginx server
 
 package { 'nginx':
