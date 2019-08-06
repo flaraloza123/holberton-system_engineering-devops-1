@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Configure Nginx server so that /redirect_me is redirecting to another page.
+
+mkdir -p /var/www/hb
+echo 'Holberton School' > /var/www/hb/index.html
+touch /etc/nginx/sites-available/hb.conf
+
+printf '%s\n' \
+       "server {" \
+       "listen 80;" \
+       "listen [::]:80;" \
+       "server_name 34.73.136.156 tuvo.tech www.tuvo.tech;" \
+       "root /var/www/hb;" \
+       "index index.html;" \
+       "location = /redirect_me {" \
+       "return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;" \
+       "}" \
+       "}" > /etc/nginx/sites-available/hb.conf
+sudo ln -s /etc/nginx/sites-available/hb.conf /etc/nginx/sites-enabled/hb.conf
+sudo nginx -t
+sudo systemctl restart nginx
