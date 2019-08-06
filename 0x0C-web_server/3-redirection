@@ -4,21 +4,6 @@
 sudo apt update &&
 sudo apt -y install nginx
 sudo ufw allow 'Nginx HTTP'
-mkdir -p /var/www/hb
-echo 'Holberton School' > /var/www/hb/index.html
-touch /etc/nginx/sites-available/hb.conf
-
-printf '%s\n' \
-       "server {" \
-       "listen 80;" \
-       "listen [::]:80;" \
-       "server_name 34.73.136.156 tuvo.tech www.tuvo.tech;" \
-       "root /var/www/hb;" \
-       "index index.html;" \
-       "location = /redirect_me {" \
-       "return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;" \
-       "}" \
-       "}" > /etc/nginx/sites-available/hb.conf
-ln -s /etc/nginx/sites-available/hb.conf /etc/nginx/sites-enabled/hb.conf
-# nginx -t
+echo 'Holberton School' > /var/www/html/index.html
+sed -i '/listen 80 default_server/a rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' > /etc/nginx/sites-available/default
 service nginx start
