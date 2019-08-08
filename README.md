@@ -1,8 +1,11 @@
 <p align="center">
   <img src="http://www.holbertonschool.com/holberton-logo.png">
 </p>
+
 # System Engineering and Devops
+
 This repository contains programs written in Bash for the System Engineering and Devops curriculum at Holberton School.
+
 | Project                                      | Description |
 | -------------------------------------------- | ----------- |
 | [0x00. Shell, basics](./0x00-shell_basics) | Simple file manipulation and folder navigation |
@@ -11,8 +14,6 @@ This repository contains programs written in Bash for the System Engineering and
 | [0x03. Shell, init files, variables and expansions](./0x03-shell_variables_expansions) | Implementation of aliases and environmental variables |
 | [0x04. Loops, conditions and parsing](./0x04-loops_conditions_and_parsing) | Intermediate scripting with loops and conditionals |
 | [0x05. Processes and signals](./0x05-processes_and_signals) | Process management with kill and trap |
-| [0x06. Regular Expressions](./0x06-) | Building regular expressions using Oniguruma |
-| [0x07. Networking Basics](./0x07-networking_basics)| OSI Model/Data transfer protocols |
 | [0x06. Regular Expressions](./0x06-) | Building regular expressions using Ruby's Oniguruma |
 | [0x07. Networking Basics](./0x07-networking_basics)| OSI Model and data transfer protocols |
 | [0x08. Networking Basics 2](./0x08-networking_basics_2)| Localhost, IPv4 and /etc/hosts | 
