@@ -20,8 +20,8 @@ This repository contains programs written in Bash for the System Engineering and
 | [0x09. Web Infrastructure Design](./0x09-web_infrastructure_design)| Designing secure and monitored server systems |
 | [0x0A. Configuration Management](./0x0A-configuration_management) | Server orchestration with Puppet manifests/modules |
 | [0x0B. SSH](./0x0B-SSH) | Client configuration and key generation using SSH |
-| [0x0C. Web_Server](./0x0C-web_server) | NGINX web server deployment and domain name set-up |
-| [0x0D. Web Stack Debugging #0 ](./0x0D-web_stack_debugging_0)| Using Docker to debug and maintain Apache servers |
+| [0x0C. Web Server](./0x0C-web_server) | NGINX web server deployment and domain name set-up |
+| [0x0D. Web Stack Debugging #0 ](./0x0D-web_stack_debugging_0)| Using Docker to maintain and debug Apache servers |
 
 ## Author
 * __Tu Vo__
