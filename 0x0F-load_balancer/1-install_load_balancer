@@ -1,1 +1,37 @@
 #!/usr/bin/env bash
+# Install and configure HAproxy on a lb-01 server.
+
+apt-get install haproxy
+mv /etc/haproxy/haproxy.cfg haproxy_backup.cfg
+cat > /etc/haproxy/haproxy.cfg << EOF
+global
+        log /dev/log   local0
+        log 127.0.0.1   local1 notice
+        maxconn 4096
+        user haproxy
+        group haproxy
+        daemon
+
+defaults
+        log     global
+        mode    http
+        option  httplog
+        option  dontlognull
+        retries 3
+        option redispatch
+        maxconn 2000
+        contimeout     5000
+        clitimeout     50000
+        srvtimeout     50000
+
+listen web-servers 0.0.0.0:80
+    mode http
+    stats enable
+    stats uri /haproxy?stats
+    balance roundrobin
+    option httpclose
+    option forwardfor
+    server 651-web-01 34.73.136.156 check
+    server 651-web-02 35.196.227.92 check
+EOF
+service haproxy restart
