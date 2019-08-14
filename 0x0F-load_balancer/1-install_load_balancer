@@ -25,13 +25,10 @@ defaults
         clitimeout     50000
         srvtimeout     50000
 
-listen web-servers 0.0.0.0:80
-    mode http
-    stats enable
-    stats uri /haproxy?stats
+listen web-servers
+
+bind 0.0.0.0:80
     balance roundrobin
-    option httpclose
-    option forwardfor
     server 651-web-01 34.73.136.156 check
     server 651-web-02 35.196.227.92 check
 EOF
