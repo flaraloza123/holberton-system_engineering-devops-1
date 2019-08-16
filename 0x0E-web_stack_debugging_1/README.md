@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-How to set up a HAProxy Load Balancer
+How to debug a NGINX server with bad ports
 
 ## Usage
 
@@ -19,9 +19,9 @@ How to set up a HAProxy Load Balancer
 ```sh
 root@966c5664b21f:/# curl 0:80
 curl: (7) Failed to connect to 0 port 80: Connection refused
-```
-```sh
 root@966c5664b21f:/# curl 0:80
+```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,6 +68,8 @@ root@966c5664b21f:/# cat -e 1-debugging_made_short | wc -l
 5
 root@966c5664b21f:/# ./1-debugging_made_short
 root@966c5664b21f:/# curl 0:80
+```
+```html
 <!DOCTYPE html>
 <html>
 <head>
