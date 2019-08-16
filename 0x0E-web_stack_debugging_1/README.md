@@ -95,6 +95,8 @@ Commercial support is available at
 <p><em>Thank you for using nginx.</em></p>
 </body>
 </html>
+```
+```sh
 root@966c5664b21f:/#
 root@966c5664b21f:/# service nginx status
  * nginx is not running
