@@ -7,7 +7,6 @@ How to debug a NGINX server with bad ports
 ## Usage
 
 * All Bash files were created and compiled on Ubuntu 14.04.4 LTS
-* All Puppet files are linted with Puppet Lint 2.1.1.
 
 ## Tasks
 
