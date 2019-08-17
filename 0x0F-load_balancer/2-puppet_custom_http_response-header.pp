@@ -6,7 +6,14 @@ exec { 'update':
 
 package { 'nginx':
   ensure  => installed,
-  require => Exec['update'],
+  require => Exec['update']
+}
+
+file_line { 'redirect':
+  ensure   => 'present',
+  path     => '/etc/nginx/sites-available/default',
+  after    => 'server_name _;',
+  line     => 'rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;',
 }
 
 file_line { 'header':
