@@ -3,31 +3,14 @@
 
 apt-get -y install haproxy
 echo "ENABLED=1" >> /etc/default/haproxy
-mv /etc/haproxy/haproxy.cfg haproxy_backup.cfg
-cat > /etc/haproxy/haproxy.cfg << EOF
-global
-        log /dev/log   local0
-        log 127.0.0.1   local1 notice
-        maxconn 4096
-        user haproxy
-        group haproxy
-        daemon
+cp /etc/haproxy/haproxy.cfg .
+cat >> /etc/haproxy/haproxy.cfg << EOF
+frontend
+	bind *:80
+	mode http
+	default_backend backend
 
-defaults
-        log     global
-        mode    http
-        option  httplog
-        option  dontlognull
-        retries 3
-        option redispatch
-        maxconn 2000
-        contimeout     5000
-        clitimeout     50000
-        srvtimeout     50000
-
-listen web-servers
-
-bind 0.0.0.0:80
+backend
     balance roundrobin
     server 651-web-01 34.73.136.156 check
     server 651-web-02 35.196.227.92 check
