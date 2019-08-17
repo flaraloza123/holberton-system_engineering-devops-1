@@ -14,8 +14,8 @@ frontend front
 
 backend back
     balance roundrobin
-    server 651-web-01 34.73.136.156 check
-    server 651-web-02 35.196.227.92 check
+    server 651-web-01 34.73.136.156:80 check
+    server 651-web-02 35.196.227.92:80 check
 
 EOF
 service haproxy restart
