@@ -6,8 +6,8 @@ How to use Puppet
 
 ## Usage
 
-* All files were created and compiled on Ubuntu 14.04.4 LTS
-* All files are linted with Puppet Lint 2.1.1.
+* All Bash files were created and compiled on Ubuntu 14.04.4 LTS
+* All Puppet files are linted with Puppet Lint 2.1.1.
 
 ## Tasks
 
