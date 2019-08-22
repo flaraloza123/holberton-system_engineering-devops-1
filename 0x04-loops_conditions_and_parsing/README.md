@@ -10,12 +10,11 @@ General
 * How to use the cut command
 * What are files and other comparison operators, and how to use them
 
-## Usage
+## Requirements
 
-* All files were created and compiled on Ubuntu 14.04.4 LTS
+* All files are created and compiled on Ubuntu 14.04.4 LTS
 * All files are linted with Shellcheck.
 
----
 ## Tasks
 
 ### [0. Create a SSH RSA key pair](./0-RSA_public_key.pub)
@@ -457,7 +456,5 @@ sylvain@ubuntu$ ./103-dig_the-data | head -n 10
     36 195.154.172.53 200
 ```
 
----
-
 ## Author
-* **Tu Vo** - [tuvo1106](./)
+* **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
