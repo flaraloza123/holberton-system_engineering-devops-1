@@ -17,11 +17,11 @@ sylvain@ubuntu$ ./example.rb 127.0.0.1
 127.0.0.1
 ```
 
-## Usage
+## Requirements
 
-* All files were created and compiled on Ubuntu 14.04.4 LTS
+* All files are created and compiled on Ubuntu 14.04.4 LTS.
+* All Bash scripts are linted with Shellcheck.
 
----
 ## Tasks
 
 ### [0. Simply matching Holberton](./0-simply_match_holberton.rb)
@@ -117,7 +117,5 @@ $ ./100-textme.rb 'Feb 1 11:00:00 ip-10-0-64-11 mdr: 2016-02-01 11:00:00 Sent SM
 ### [9. Pass LinkedIn technical interview level0](./101-passed_linkedin_regex_challenge.jpg)
 * Solve LinkedIn regex puzzle: https://engineering.linkedin.com/puzzle
 
----
-
 ## Author
-* **Tu Vo** - [tuvo1106](github.com/tuvo1106)
+* **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
