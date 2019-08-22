@@ -9,12 +9,11 @@ General
 * What is a signal
 * What are the 2 signals that cannot be ignored
 
-## Usage
+## Requirements
 
-* All files were created and compiled on Ubuntu 14.04.4 LTS
+* All files are created and compiled on Ubuntu 14.04.4 LTS
 * All files are linted with Shellcheck.
 
----
 ## Tasks
 
 ### [0. What is my PID](./0-what-is-my-pid)
@@ -359,8 +358,6 @@ In Terminal #0, I start by compiling 102-zombie.c and executing zombie which cre
   * Two minutes of above
   * Done in English
   * Published to Youtube
-  
----
 
 ## Author
-* **Tu Vo** - [tuvo1106](./)
+* **Tu Vo** - [tuvo1106](https://github.com)
