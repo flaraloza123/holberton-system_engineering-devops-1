@@ -55,11 +55,10 @@ Keyboard Shortcuts for Bash
 LTS
 * What does LTS mean?
 
-## Usage
+## Requirements
 
-* All files were created and compiled on Ubuntu 14.04.4 LTS
+* All files are created and compiled on Ubuntu 14.04.4 LTS
 
----
 ## Tasks
 
 ### [0. Where am I?](./0-current_working_directory)
@@ -309,7 +308,5 @@ thisisanholbertonfile: Holberton data
 thisisatextfile:       ASCII text
 ```
 
----
-
 ## Author
-* **Tu Vo** - [tuvo1106](./)
+* **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
