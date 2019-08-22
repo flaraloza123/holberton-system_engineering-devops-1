@@ -4,9 +4,10 @@
 
 How to set up a HAProxy Load Balancer
 
-## Usage
+## Requirements
 
-* All Bash files were created and compiled on Ubuntu 14.04.4 LTS
+* All Bash files are created and compiled on Ubuntu 14.04.4 LTS.
+* All Bash scripts are linted with Shellcheck.
 * All Puppet files are linted with Puppet Lint 2.1.1.
 
 ## Tasks
@@ -66,4 +67,4 @@ Accept-Ranges: bytes
   * Write 2-puppet_custom_http_response-header.pp so that it configures a brand new Ubuntu machine to the requirements asked in this task
 
 ## Author
-* **Tu Vo** - [tuvo1106](github.com/tuvo1106)
+* **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
