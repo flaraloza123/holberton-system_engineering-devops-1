@@ -8,12 +8,10 @@ General
 * What is /etc/hosts
 * How to display your machine’s active network interfaces
 
-## Usage
+## Requirements
 
-* All files were created and compiled on Ubuntu 14.04.4 LTS
+* All files are created and compiled on Ubuntu 14.04.4 LTS
 * All files are linted with Shellcheck.
-
----
 
 ### [0. Localhost](./0-localhost)
 * What is localhost?
@@ -114,7 +112,5 @@ Hello world
 test
 ```
 
----
-
 ## Author
-* **Tu Vo** - [tuvo1106](github.com/tuvo1106)
+* **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
