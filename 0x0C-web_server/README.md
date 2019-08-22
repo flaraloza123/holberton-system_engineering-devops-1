@@ -7,10 +7,11 @@
 * Why web servers usually have a parent process and child processes
 * What are the main HTTP requests
 
-## Usage
+## Requirements
 
-* All files were created and compiled on Ubuntu 14.04.4 LTS
-* All files are linted with Puppet Lint 2.1.1.
+* All files are created and compiled on Ubuntu 14.04.4 LTS.
+* All Bash scripts are linted with Shellcheck.
+* All Puppet scripts are linted with Puppet Lint 2.1.1.
 
 ## Tasks
 
@@ -143,4 +144,4 @@ Ceci n'est pas une page
   * Your answer file should be a Puppet manifest containing commands to automatically configure an Ubuntu machine to respect above requirements
 
 ## Author
-* **Tu Vo** - [tuvo1106](github.com/tuvo1106)
+* **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
