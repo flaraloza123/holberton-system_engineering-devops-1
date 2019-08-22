@@ -4,9 +4,10 @@
 
 How to debug a NGINX server with bad ports
 
-## Usage
+## Requirements
 
-* All Bash files were created and compiled on Ubuntu 14.04.4 LTS
+* All Bash files are created and compiled on Ubuntu 14.04.4 LTS.
+* All Bash scripts are linted with Shellcheck.
 
 ## Tasks
 
@@ -102,4 +103,4 @@ root@966c5664b21f:/# service nginx status
  ```
 
 ## Author
-* **Tu Vo** - [tuvo1106](github.com/tuvo1106)
+* **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
