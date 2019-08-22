@@ -4,10 +4,11 @@
 
 In this first debugging project, you will need to get Apache to run on the container and to return a page containing Hello Holberton when querying the root of it.
 
-## Usage
+## Requirements
 
-* All files were created and compiled on Ubuntu 14.04.4 LTS
-* All files are linted with Puppet Lint 2.1.1.
+* All files are created and compiled on Ubuntu 14.04.4 LTS
+* All Bash scripts are linted with Shellcheck.
+* All Puppet scripts are linted with Puppet Lint 2.1.1.
 
 ## Tasks
 
