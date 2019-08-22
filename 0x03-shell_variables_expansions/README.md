@@ -33,11 +33,11 @@ The alias Command
 Other help pages
 * How to execute commands from a file in the current shell
 
-## Usage
+## Requirements
 
-* All files were created and compiled on Ubuntu 14.04.4 LTS
+* All files are created and compiled on Ubuntu 14.04.4 LTS.
+* All Bash scripts are linted with Shellcheck.
 
----
 ## Tasks
 
 ### [0. o](./0-alias )
@@ -337,7 +337,5 @@ julien@production-503e7013:~$ ./102-water_and_stir
 holberton
 ```
 
----
-
 ## Author
-* **Tu Vo** - [tuvo1106](./)
+* **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
