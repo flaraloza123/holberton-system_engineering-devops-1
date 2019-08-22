@@ -21,9 +21,9 @@ Other Man Pages
 * What is the /etc/passwd file and what is its format
 * What is the /etc/shadow file and what is its format
 
-## Usage
+## Requirements
 
-* All files were created and compiled on Ubuntu 14.04.4 LTS
+* All files are created and compiled on Ubuntu 14.04.4 LTS
 
 ---
 ## Tasks
@@ -751,7 +751,5 @@ arc.dental.upenn.edu
 131.110.62.74
 ```
 
----
-
 ## Author
-* **Tu Vo** - [tuvo1106](./)
+* **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
