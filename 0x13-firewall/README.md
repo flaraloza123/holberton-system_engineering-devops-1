@@ -10,7 +10,7 @@ Pick one answer for every question.
   * A hardware security system
   * A hardware or software security system
   * A software security system
-  
+
 * What are the 2 types of firewall:
   * Soft and hard firewall
   * Incoming and outgoing firewall
