@@ -8,8 +8,6 @@ General:
 * You must be able to explain system redundancy
 * Know all the mentioned acronyms: LAMP, SPOF, QPS
 
----
-
 ### [0. Simple web stack](./0-simple_web_stack)
 * A lot of websites are powered by simple web infrastructure, a lot of time it is composed of a single server with a LAMP stack. On a whiteboard, design a one server web infrastructure that hosts the website that is reachable via www.foobar.com. Start your explanation by having a user wanting to access your website.
 
@@ -117,4 +115,4 @@ Requirements:
 ---
 
 ## Author
-* **Tu Vo** - [tuvo1106](github.com/tuvo1106)
+* **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
