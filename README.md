@@ -23,7 +23,11 @@ This repository contains programs written in Bash for the System Engineering and
 | [0x0C. Web Server ](./0x0C-web_server) | NGINX web server deployment and domain name set-up |
 | [0x0D. Web Stack Debugging #0 ](./0x0D-web_stack_debugging_0)| Using Docker to maintain and debug Apache servers |
 | [0x0E. Web Stack Debugging #1 ](./0x0E-web_stack_debugging_1) | Debugging NGINX servers with bad ports |
-| [0x0F. Load Balancer](./0x0F-load_balancer) | Configuring HAProxy load balancers |
+| [0x0F. Load Balancer](./0x0F-load_balancer) | Load balancing on HAProxy servers |
+| [0x10. HTTPS SSL](./0x10-https_ssl) | Configuring HTTPS with Let's Encrypt and certbot |
+| [0x11. What_happens_when_you_type \.\.\.](./0x11-what_happens_when_your_type_holbertonschool_com_in_your_browser_and_press_enter)| A blog and diagram about how the internet works |
+| [0x12. Web stack debugging #2](./0x12-web_stack_debugging_2)| Debugging and running software as another user |
+| [0x13. Firewall](./0x13-firewall)| Setting up UFW to block/allow incoming traffic |
 
 ## Author
 * __Tu Vo__
