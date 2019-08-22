@@ -18,11 +18,10 @@ Other Man Pages
 * How to print the groups a user is in
 * How to print the effective userid
 
-## Usage
+## Requirements
 
-* All files were created and compiled on Ubuntu 14.04.4 LTS
+* All files are created and compiled on Ubuntu 14.04.4 LTS
 
----
 ## Tasks
 
 ### [0. My name is Betty](./0-iam_betty)
@@ -287,7 +286,5 @@ ubuntu@ip-172-31-63-244:/tmp/man$ wc 101-man_holberton
 ubuntu@ip-172-31-63-244:/tmp/man$ man ./101-man_holberton
 ```
 
----
-
 ## Author
-* **Tu Vo** - [tuvo1106](./)
+* **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
