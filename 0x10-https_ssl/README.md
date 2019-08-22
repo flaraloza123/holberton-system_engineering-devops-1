@@ -6,9 +6,10 @@
 * What is the purpose encrypting traffic
 * What SSL termination means
 
-## Usage
+## Requirements
 
-* All Bash files were created and compiled on Ubuntu 14.04.4 LTS
+* All Bash files are created and compiled on Ubuntu 14.04.4 LTS.
+* All Bash scripts are linted with Shellcheck.
 
 ## Tasks
 
