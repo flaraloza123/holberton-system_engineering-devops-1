@@ -23,19 +23,16 @@ What is the Internet
 * Why IPv6 was created
 
 TCP/UDP
-What are the 2 mainly used data transfer protocols for IP (transfer level on the OSI schema)
-What is the main difference between TCP and UDP
-What is a port
-Memorize SSH, HTTP and HTTPS port numbers
-What tool/protocol is often used to check if a device is connected to a network
+ * What are the 2 mainly used data transfer protocols for IP (transfer level on the OSI schema)
+ * What is the main difference between TCP and UDP
+ * What is a port
+ * Memorize SSH, HTTP and HTTPS port numbers
+ * What tool/protocol is often used to check if a device is connected to a network
 
+## Requirements
 
-## Usage
-
-* All files were created and compiled on Ubuntu 14.04.4 LTS
-* All files are linted with Shellcheck.
-
----
+* All files were created and compiled on Ubuntu 14.04.4 LTS.
+* All Bash scripts are linted with Shellcheck.
 
 ## Tasks
 
@@ -156,7 +153,5 @@ sylvain@ubuntu$ ./5-is_the_host_on_the_network
 Usage: 5-is_the_host_on_the_network {IP_ADDRESS}
 ```
 
----
-
 ## Author
-* **Tu Vo** - [tuvo1106](github.com/tuvo1106)
+* **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
