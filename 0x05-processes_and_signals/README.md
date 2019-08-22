@@ -1,6 +1,7 @@
 # 0x05. Processes and signals
 
 ## Learning Objectives
+
 General
 * What is a PID
 * What is a process
@@ -11,7 +12,7 @@ General
 
 ## Requirements
 
-* All files are created and compiled on Ubuntu 14.04.4 LTS
+* All files are created and compiled on Ubuntu 14.04.4 LTS.
 * All files are linted with Shellcheck.
 
 ## Tasks
@@ -360,4 +361,4 @@ In Terminal #0, I start by compiling 102-zombie.c and executing zombie which cre
   * Published to Youtube
 
 ## Author
-* **Tu Vo** - [tuvo1106](https://github.com)
+* **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
