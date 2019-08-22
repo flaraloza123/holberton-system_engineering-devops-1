@@ -1,1 +1,2 @@
 #!/usr/bin/env bash
+# Configure a server so that its firewall redirects port 8080/TCP to port 80/TCP.
