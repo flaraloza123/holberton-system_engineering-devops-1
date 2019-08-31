@@ -22,13 +22,13 @@
     * The IP of the server we want to transfer the file to
     * The username scp connects with
     * The path to the SSH private key that scp uses
-  * Display Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY if less than 3 parameters passed
+  * Display Requirements: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY if less than 3 parameters passed
   * scp must transfer the file to the user home directory ~/
   * Strict host key checking must be disabled when using scp
 
 ```sh
 sylvain@ubuntu$ ./0-transfer_file
-Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY
+Requirements: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY
 sylvain@ubuntu$
 sylvain@ubuntu$ ssh ubuntu@8.8.8.8 -i /vagrant/sylvain 'ls ~/'
 afile

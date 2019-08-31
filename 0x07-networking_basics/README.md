@@ -133,7 +133,7 @@ unix  2      [ ACC ]     SEQPACKET  LISTENING     7156     378/systemd-udevd   /
 ### [5. Is the host on the network](./5-is_the_host_on_the_network)
 * Write a Bash script that pings an IP address passed as an argument.
   * Accepts a string as an argument
-  * Displays Usage: 5-is_the_host_on_the_network {IP_ADDRESS} if no argument passed
+  * Displays Requirements: 5-is_the_host_on_the_network {IP_ADDRESS} if no argument passed
   * Ping the IP 5 times
 
 ```sh
@@ -150,7 +150,7 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 rtt min/avg/max/mdev = 7.570/10.682/13.679/2.546 ms
 sylvain@ubuntu$
 sylvain@ubuntu$ ./5-is_the_host_on_the_network
-Usage: 5-is_the_host_on_the_network {IP_ADDRESS}
+Requirements: 5-is_the_host_on_the_network {IP_ADDRESS}
 ```
 
 ## Author

@@ -277,10 +277,10 @@ Starting 100-process_and_pid_file in the terminal #0 and then killing it in the 
     * Starts manage_my_process
     * Creates a file containing its PID in /var/run/my_process.pid
     * Displays manage_my_process restarted
-  * Displays Usage: manage_my_process {start|stop|restart} if any other argument or no argument is passed
+  * Displays Requirements: manage_my_process {start|stop|restart} if any other argument or no argument is passed
 ```sh
 sylvain@ubuntu$ sudo ./101-manage_my_process
-Usage: manage_my_process {start|stop|restart}
+Requirements: manage_my_process {start|stop|restart}
 sylvain@ubuntu$ sudo ./101-manage_my_process start
 manage_my_process started
 sylvain@ubuntu$ tail -f -n0 /tmp/my_process 
