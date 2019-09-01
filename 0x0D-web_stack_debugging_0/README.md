@@ -6,14 +6,15 @@ In this first debugging project, you will need to get Apache to run on the conta
 
 ## Requirements
 
-* All files are created and compiled on Ubuntu 14.04.4 LTS
-* All Bash scripts are linted with Shellcheck.
-* All Puppet scripts are linted with Puppet Lint 2.1.1.
+- All files are created and compiled on Ubuntu 14.04.4 LTS
+- All Bash scripts are linted with Shellcheck
+- All Puppet scripts are linted with Puppet Lint 2.1.1
 
 ## Tasks
 
 ### [0. Give me a page!](./0-give_me_a_page)
-* In this first debugging project, you will need to get Apache to run on the container and to return a page containing Hello Holberton when querying the root of it.
+
+- In this first debugging project, you will need to get Apache to run on the container and to return a page containing Hello Holberton when querying the root of it.
 
 ```sh
 vagrant@vagrant:~$ docker run -p 8080:80 -d -it holbertonschool/265-0
@@ -35,4 +36,5 @@ Hello Holberton
 After connecting to the container and fixing whatever needed to be fixed (here is your mission), you can see that curling port 80 return a page that contains Hello Holberton. Paste the command(s) you used to fix the issue in your answer file.
 
 ## Author
-* **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
+
+- **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)

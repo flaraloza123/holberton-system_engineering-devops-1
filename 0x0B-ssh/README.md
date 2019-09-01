@@ -2,27 +2,29 @@
 
 ## Learning Objectives
 
-* What is a server
-* Where servers usually live
-* What is SSH
-* How to create an SSH RSA key pair
-* How to connect to a remote host using an SSH RSA key pair
-* The advantage of using  #!/usr/bin/env bash instead of /bin/bash 
+- What is a server
+- Where servers usually live
+- What is SSH
+- How to create an SSH RSA key pair
+- How to connect to a remote host using an SSH RSA key pair
+- The advantage of using #!/usr/bin/env bash instead of /bin/bash
 
 ## Requirements
 
-* All files are created and compiled on Ubuntu 14.04.4 LTS.
-* All Bash scripts are linted with Shellcheck.
-* All Puppet scripts are linted with Puppet Lint 2.1.1.
+- All files are created and compiled on Ubuntu 14.04.4 LTS
+- All Bash scripts are linted with Shellcheck
+- All Puppet scripts are linted with Puppet Lint 2.1.1
 
 ## Tasks
 
 ### [0. Use a private key](./0-use_a_private_key)
-* Write a Bash script that uses ssh to connect to your server using the private key ~/.ssh/holberton with the user ubuntu.
-  * Only use ssh single-character flags
-  * You cannot use -l
-  * You do not need to handle the case of a private key protected by a passphrase
-  
+
+- Write a Bash script that uses ssh to connect to your server using the private key ~/.ssh/holberton with the user ubuntu.
+
+  - Only use ssh single-character flags
+  - You cannot use -l
+  - You do not need to handle the case of a private key protected by a passphrase
+
 ```sh
 sylvain@ubuntu$ ./0-use_a_private_key
 Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-45-generic x86_64)
@@ -45,11 +47,13 @@ Connection to 8.8.8.8 closed.
 ```
 
 ### [1. Create an SSH key pair](./1-create_ssh_key_pair)
-* Write a Bash script that creates an RSA key pair.
-  * Name of the created private key must be holberton
-  * Number of bits in the created key to be created 4096
-  * The created key must be protected by the passphrase betty
-  
+
+- Write a Bash script that creates an RSA key pair.
+
+  - Name of the created private key must be holberton
+  - Number of bits in the created key to be created 4096
+  - The created key must be protected by the passphrase betty
+
 ```sh
 sylvain@ubuntu$ ls
 1-create_ssh_key_pair
@@ -76,9 +80,10 @@ sylvain@ubuntu$ ls
 ```
 
 ### [2. Client configuration file](./2-ssh_config)
-* Your Ubuntu Vagrant machine has an SSH configuration file for the local SSH client, let’s configure it to our needs so that you can connect to a server without typing a password.
-  * Your SSH client configuration must be configured to use the private key ~/.ssh/holberton
-  * Your SSH client configuration must be configured to refuse to authenticate using a password
+
+- Your Ubuntu Vagrant machine has an SSH configuration file for the local SSH client, let’s configure it to our needs so that you can connect to a server without typing a password.
+  - Your SSH client configuration must be configured to use the private key ~/.ssh/holberton
+  - Your SSH client configuration must be configured to refuse to authenticate using a password
 
 ```sh
 sylvain@ubuntu$ ssh -v ubuntu@98.98.98.98
@@ -139,12 +144,15 @@ Last login: Mon Feb 20 18:26:38 2017 from 104.7.14.91
 ```
 
 ### [3. Let me in!](./)
-* Now that you have successfully connected to your server, we would also like to join the party.
+
+- Now that you have successfully connected to your server, we would also like to join the party.
 
 ### [4. Client configuration file (w/ Puppet)](./4-puppet_ssh_config.pp)
+
 Let’s practice using Puppet to make changes to our configuration file. Just as in the previous configuration file task, we’d like you to set up your client SSH configuration file so that you can connect to a server without typing a password.
-  * Your SSH client configuration must be configured to use the private key ~/.ssh/holberton
-  * Your SSH client configuration must be configured to refuse to authenticate using a password
+
+- Your SSH client configuration must be configured to use the private key ~/.ssh/holberton
+- Your SSH client configuration must be configured to refuse to authenticate using a password
 
 ```sh
 vagrant@ubuntu-xenial:~$ sudo puppet apply puppet_ssh_config.pp
@@ -155,4 +163,5 @@ Notice: Finished catalog run in 0.03 seconds
 ```
 
 ## Author
-* **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
+
+- **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)

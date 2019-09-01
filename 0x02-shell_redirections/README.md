@@ -3,49 +3,57 @@
 ## Learning Objectives
 
 Shell, I/O Redirection
-* What do the commands head, tail, find, wc, sort, uniq, grep, tr do
-* How to redirect standard output to a file
-* How to get standard input from a file instead of the keyboard
-* How to send the output from one program to the input of another program
-* How to combine commands and filters with redirections
+
+- What do the commands head, tail, find, wc, sort, uniq, grep, tr do
+- How to redirect standard output to a file
+- How to get standard input from a file instead of the keyboard
+- How to send the output from one program to the input of another program
+- How to combine commands and filters with redirections
 
 Special Characters
-* What are special characters
-* Understand what do the white spaces, single quotes, double quotes, backslash, comment, pipe, command separator, tilde and how and when to use them
+
+- What are special characters
+- Understand what do the white spaces, single quotes, double quotes, backslash, comment, pipe, command separator, tilde and how and when to use them
 
 Other Man Pages
-* How to display a line of text
-* How to concatenate files and print on the standard output
-* How to reverse a string
-* How to remove sections from each line of files
-* What is the /etc/passwd file and what is its format
-* What is the /etc/shadow file and what is its format
+
+- How to display a line of text
+- How to concatenate files and print on the standard output
+- How to reverse a string
+- How to remove sections from each line of files
+- What is the /etc/passwd file and what is its format
+- What is the /etc/shadow file and what is its format
 
 ## Requirements
 
-* All files are created and compiled on Ubuntu 14.04.4 LTS
+- All files are created and compiled on Ubuntu 14.04.4 LTS
 
----
 ## Tasks
 
 ### [0. Hello World](./0-hello_world)
-* Write a script that prints “Hello, World”, followed by a new line to the standard output.
+
+- Write a script that prints “Hello, World”, followed by a new line to the standard output.
+
 ```sh
-julien@ubuntu:/tmp/h$ ./0-hello_world 
+julien@ubuntu:/tmp/h$ ./0-hello_world
 Hello, World
 julien@ubuntu:/tmp/h$ ./0-hello_world | cat -e
 Hello, World$
 ```
 
-### [1. Confused smiley](./1-confused_smiley )
-* Write a script that displays a confused smiley "(Ôo)'.
+### [1. Confused smiley](./1-confused_smiley)
+
+- Write a script that displays a confused smiley "(Ôo)'.
+
 ```sh
-julien@ubuntu:/tmp/h$ ./1-confused_smiley 
+julien@ubuntu:/tmp/h$ ./1-confused_smiley
 "(Ôo)'
 ```
 
 ### [2. Let's display a file](./2-hellofile)
-* Display the content of the /etc/passwd file.
+
+- Display the content of the /etc/passwd file.
+
 ```sh
 $ ./2-hellofile
 ##
@@ -74,7 +82,9 @@ _krbfast:*:246:-2:Kerberos FAST Account:/var/empty:/usr/bin/false
 ```
 
 ### [3. What about 2?](./3-twofiles)
-* Display the content of /etc/passwd and /etc/hosts
+
+- Display the content of /etc/passwd and /etc/hosts
+
 ```sh
 $ ./3-twofiles
 ##
@@ -102,7 +112,9 @@ daemon:*:1:1:System Services:/var/root:/usr/bin/false
 ```
 
 ### [4. Last lines of a file](./4-lastlines)
-* Display the last 10 lines of /etc/passwd
+
+- Display the last 10 lines of /etc/passwd
+
 ```sh
 $ ./4-lastlines
 _assetcache:*:235:235:Asset Cache Service:/var/empty:/usr/bin/false
@@ -118,7 +130,9 @@ _krbfast:*:246:-2:Kerberos FAST Account:/var/empty:/usr/bin/false
 ```
 
 ### [5. I'd prefer the first ones actually](./5-firstlines)
-* Display the first 10 lines of /etc/passwd
+
+- Display the first 10 lines of /etc/passwd
+
 ```sh
 $ ./5-firstlines
 ##
@@ -134,10 +148,12 @@ $ ./5-firstlines
 ```
 
 ### [6. Line #2](./6-third_line)
-* Write a script that displays the third line of the file iacta.
-  * You’re not allowed to use sed
+
+- Write a script that displays the third line of the file iacta.
+  - You’re not allowed to use sed
+
 ```sh
-julien@ubuntu:/tmp/h$ cat iacta 
+julien@ubuntu:/tmp/h$ cat iacta
 Alea iacta est
 
 Alea iacta est ("The die is cast") is a Latin phrase attributed by Suetonius
@@ -152,12 +168,14 @@ German (Der Würfel ist gefallen), Hungarian (A kocka el van vetve) and many oth
 indicate that events have passed a point of no return.
 
 Read more: https://en.wikipedia.org/wiki/Alea_iacta_est
-julien@ubuntu:/tmp/h$ ./6-third_line 
+julien@ubuntu:/tmp/h$ ./6-third_line
 Alea iacta est ("The die is cast") is a Latin phrase attributed by Suetonius
 ```
 
 ### [7. It is a good file that cuts iron without making a noise](./7-file)
-* Write a shell script that creates a file named exactly \*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:) containing the text Holberton School  ending by a new line.
+
+- Write a shell script that creates a file named exactly \*\\'"Holberton School"\'\\\*\$\?\*\*\*\*\*:) containing the text Holberton School ending by a new line.
+
 ```sh
 julien@production-503e7013:~/shell$ ls && ./7-file && ls -l && cat -e \\*
 0-mac_and_cheese 7-file 7-file~ Makefile
@@ -170,8 +188,10 @@ total 20
 Holberton School$
 ```
 
-### [8. Save current state of directory](./8-cwd_state )
-* Write a script that writes into the file ls_cwd_content the result of the command ls -la. If the file ls_cwd_content already exists, it should be overwritten. If the file ls_cwd_content does not exist, create it.
+### [8. Save current state of directory](./8-cwd_state)
+
+- Write a script that writes into the file ls_cwd_content the result of the command ls -la. If the file ls_cwd_content already exists, it should be overwritten. If the file ls_cwd_content does not exist, create it.
+
 ```sh
 julien@ubuntu:/tmp/h$ ls -la
 total 20
@@ -180,7 +200,7 @@ drwxrwxrwt 13 root   root   4096 Sep 20 18:18 ..
 -rwxrw-r--  1 julien julien   36 Sep 20 18:18 8-cwd_state
 -rw-rw-r--  1 betty  julien   23 Sep 20 14:25 hello
 -rw-rw-r--  1 julien julien  926 Sep 20 17:52 iacta
-julien@ubuntu:/tmp/h$ ./8-cwd_state 
+julien@ubuntu:/tmp/h$ ./8-cwd_state
 julien@ubuntu:/tmp/h$ ls -la
 total 24
 drwxrwxr-x  2 julien julien 4096 Sep 20 18:18 .
@@ -189,7 +209,7 @@ drwxrwxrwt 13 root   root   4096 Sep 20 18:18 ..
 -rw-rw-r--  1 betty  julien   23 Sep 20 14:25 hello
 -rw-rw-r--  1 julien julien  926 Sep 20 17:52 iacta
 -rw-rw-r--  1 julien julien  329 Sep 20 18:18 ls_cwd_content
-julien@ubuntu:/tmp/h$ cat ls_cwd_content 
+julien@ubuntu:/tmp/h$ cat ls_cwd_content
 total 20
 drwxrwxr-x  2 julien julien 4096 Sep 20 18:18 .
 drwxrwxrwt 13 root   root   4096 Sep 20 18:18 ..
@@ -199,10 +219,12 @@ drwxrwxrwt 13 root   root   4096 Sep 20 18:18 ..
 -rw-rw-r--  1 julien julien    0 Sep 20 18:18 ls_cwd_content
 ```
 
-### [9. Duplicate last line](./9-duplicate_last_line )
-* Write a script that duplicates the last line of the file iacta
+### [9. Duplicate last line](./9-duplicate_last_line)
+
+- Write a script that duplicates the last line of the file iacta
+
 ```sh
-julien@ubuntu:/tmp/h$ cat iacta 
+julien@ubuntu:/tmp/h$ cat iacta
 Alea iacta est
 
 Alea iacta est ("The die is cast") is a Latin phrase attributed by Suetonius
@@ -217,8 +239,8 @@ German (Der Würfel ist gefallen), Hungarian (A kocka el van vetve) and many oth
 indicate that events have passed a point of no return.
 
 Read more: https://en.wikipedia.org/wiki/Alea_iacta_est
-julien@ubuntu:/tmp/h$ ./9-duplicate_last_line 
-julien@ubuntu:/tmp/h$ cat iacta 
+julien@ubuntu:/tmp/h$ ./9-duplicate_last_line
+julien@ubuntu:/tmp/h$ cat iacta
 Alea iacta est
 
 Alea iacta est ("The die is cast") is a Latin phrase attributed by Suetonius
@@ -236,8 +258,10 @@ Read more: https://en.wikipedia.org/wiki/Alea_iacta_est
 Read more: https://en.wikipedia.org/wiki/Alea_iacta_est
 ```
 
-### [10. No more javascript](./10-no_more_js )
-* Write a script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.
+### [10. No more javascript](./10-no_more_js)
+
+- Write a script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.
+
 ```sh
 julien@ubuntu:/tmp/h$ ls -lR
 .:
@@ -256,7 +280,7 @@ total 0
 
 ./dir.js:
 total 0
-julien@ubuntu:/tmp/h$ ./10-no_more_js 
+julien@ubuntu:/tmp/h$ ./10-no_more_js
 julien@ubuntu:/tmp/h$ ls -lR
 .:
 total 24
@@ -275,9 +299,11 @@ total 0
 ```
 
 ### [11. Don't just count your directories, make your directories count](./11-directories)
-* Write a script that counts the number of directories and sub-directories in the current directory.
-  * The current and parent directories should not be taken into account
-  * Hidden directories should be counted
+
+- Write a script that counts the number of directories and sub-directories in the current directory.
+  - The current and parent directories should not be taken into account
+  - Hidden directories should be counted
+
 ```sh
 julien@production-503e7013:~/shell/fun_with_the_shell$ ls -lRa
 .:
@@ -320,9 +346,11 @@ julien@production-503e7013:~/shell/fun_with_the_shell$ ./11-directories
 ```
 
 ### [12. What’s new](./12-newest_files)
-* Create a script that displays the 10 newest files in the current directory.
-  * One file per line
-  * Sorted from the newest to the oldest
+
+- Create a script that displays the 10 newest files in the current directory.
+  - One file per line
+  - Sorted from the newest to the oldest
+
 ```sh
 alex@ubuntu:/tmp$ ls -l
 total 7
@@ -340,7 +368,7 @@ total 7
 -rwxr-xr-x 1 501 dialout  36 Sep 28 00:34 8-cwd_state
 -rwxr-xr-x 1 501 dialout  35 Sep 28 00:35 9-duplicate_last_line
 -rw-r--r-- 1 501 dialout  19 Sep 27 23:51 README.md
-alex@ubuntu:/tmp$ ./12-newest_files 
+alex@ubuntu:/tmp$ ./12-newest_files
 12-newest_files
 11-directories
 10-no_more_js
@@ -354,12 +382,14 @@ alex@ubuntu:/tmp$ ./12-newest_files
 ```
 
 ### [13. Being unique is better than being perfect](./13-unique)
-* Create a script that takes a list of words as input and prints only words that appear exactly once.
-  * Input format: One line, one word
-  * Output format: One line, one word
-  * Words should be sorted
+
+- Create a script that takes a list of words as input and prints only words that appear exactly once.
+  - Input format: One line, one word
+  - Output format: One line, one word
+  - Words should be sorted
+
 ```sh
-julien@ubuntu:/tmp/0x02$ cat list 
+julien@ubuntu:/tmp/0x02$ cat list
 C#
 C
 Javascript
@@ -386,14 +416,16 @@ Javascript
 Javascript
 Javascript
 ASP
-julien@ubuntu:/tmp/0x02$ cat list | ./13-unique 
+julien@ubuntu:/tmp/0x02$ cat list | ./13-unique
 C
 C++
 Go
 ```
 
 ### [14. It must be in that file](./14-findthatword)
-* Display lines containing the pattern “root” from the file /etc/passwd
+
+- Display lines containing the pattern “root” from the file /etc/passwd
+
 ```sh
 $ ./14-findthatword
 root:*:0:0:System Administrator:/var/root:/bin/sh
@@ -402,14 +434,18 @@ _cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
 ```
 
 ### [15. Count that word ](./15-countthatword)
-* Display the number of lines that contain the pattern “bin” in the file /etc/passwd
+
+- Display the number of lines that contain the pattern “bin” in the file /etc/passwd
+
 ```sh
 $ ./15-countthatword
 81
 ```
 
 ### [16. What's next? ](./16-whatsnext)
-* Display lines containing the pattern “root” and 3 lines after them in the file /etc/passwd
+
+- Display lines containing the pattern “root” and 3 lines after them in the file /etc/passwd
+
 ```sh
 $ ./16-whatsnext
 root:*:0:0:System Administrator:/var/root:/bin/sh
@@ -424,8 +460,10 @@ _dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false
 _dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false
 ```
 
-### [17. I hate bins  ](./17-hidethisword)
-* Display all the lines in the file /etc/passwd that do not contain the pattern “bin”
+### [17. I hate bins ](./17-hidethisword)
+
+- Display all the lines in the file /etc/passwd that do not contain the pattern “bin”
+
 ```sh
 $ ./17-hidethisword
 ##
@@ -441,8 +479,10 @@ $ ./17-hidethisword
 ```
 
 ### [18. Letters only please ](./18-letteronly)
-* Display all lines of the file /etc/ssh/sshd_config starting with a letter.
-  * include capital letters as well
+
+- Display all lines of the file /etc/ssh/sshd_config starting with a letter.
+  - include capital letters as well
+
 ```sh
 $ ./18-letteronly
 SyslogFacility AUTHPRIV
@@ -453,29 +493,37 @@ Subsystem   sftp    /usr/libexec/sftp-server
 ```
 
 ### [19. A to Z ](./19-AZ)
-* Replace all characters A and c from input to Z and e respectively.
+
+- Replace all characters A and c from input to Z and e respectively.
+
 ```sh
-julien@ubuntu:/tmp/0x02$ echo 'Replace all characters `A` and `c` from input to `Z` and `e`.' | ./19-AZ 
+julien@ubuntu:/tmp/0x02$ echo 'Replace all characters `A` and `c` from input to `Z` and `e`.' | ./19-AZ
 Replaee all eharaeters `Z` and `e` from input to `Z` and `e`.
 ```
 
 ### [20. Without C, you would live in hiago ](./20-hiago)
-* Create a script that removes all letters c and C from input.
+
+- Create a script that removes all letters c and C from input.
+
 ```sh
-julien@ubuntu:/tmp/0x02$ echo Chicago | ./20-hiago 
+julien@ubuntu:/tmp/0x02$ echo Chicago | ./20-hiago
 hiago
 ```
 
 ### [21. esreveR ](./21-reverse)
-* Write a script that reverse its input.
+
+- Write a script that reverse its input.
+
 ```sh
-julien@ubuntu:/tmp/0x02$ echo "Reverse" | ./21-reverse 
+julien@ubuntu:/tmp/0x02$ echo "Reverse" | ./21-reverse
 esreveR
 ```
 
 ### [22. DJ Cut Killer ](./22-users_and_homes)
-* Write a script that displays all users and their home directories, sorted by users.
-  * Based on the the /etc/passwd file
+
+- Write a script that displays all users and their home directories, sorted by users.
+  - Based on the the /etc/passwd file
+
 ```sh
 julien@ubuntu:/tmp/0x02$ cat /etc/passwd
 root:x:0:0:root:/root:/bin/bash
@@ -521,7 +569,7 @@ julien:x:1000:1000:Julien Barbier,,,:/home/julien:/bin/bash
 guillaume:x:1001:1001:,,,:/home/guillaume:/bin/bash
 betty:x:1002:1002::/home/betty:
 julien@ubuntu:/tmp/0x02$
-julien@ubuntu:/tmp/0x02$ ./22-users_and_homes 
+julien@ubuntu:/tmp/0x02$ ./22-users_and_homes
 _apt:/nonexistent
 avahi-autoipd:/var/lib/avahi-autoipd
 avahi:/var/run/avahi-daemon
@@ -567,12 +615,14 @@ www-data:/var/www
 ```
 
 ### [23. Empty casks make the most noise ](./100-empty_casks)
-* Write a command that finds all empty files and directories in the current directory and all sub-directories.
-  * Only the names of the files and directories should be displayed (not the entire path)
-  * Hidden files should be listed
-  * One file name per line
-  * The listing should end with a new line
-  * You are not allowed to use basename, grep, egrep, fgrep or rgrep
+
+- Write a command that finds all empty files and directories in the current directory and all sub-directories.
+  - Only the names of the files and directories should be displayed (not the entire path)
+  - Hidden files should be listed
+  - One file name per line
+  - The listing should end with a new line
+  - You are not allowed to use basename, grep, egrep, fgrep or rgrep
+
 ```sh
 ubuntu@ip-172-31-63-244:~/holbertonschool$ ls -laR
 .:
@@ -649,14 +699,16 @@ rudy_rigot.gif
 ```
 
 ### [24. Empty casks make the most noise ](./101-gifs)
-* Write a script that lists all the files with a .gif extension in the current directory and all its sub-directories.
-  * Hidden files should be listed
-  * Only regular files (not directories) should be listed
-  * The names of the files should be displayed without their extensions
-  * The files should be sorted by byte values, but case-insensitive (file aaa should be listed before file bbb, file .b should be listed   before file a, and file Rona should be listed after file jay)
-  * One file name per line
-  * The listing should end with a new line
-  * You are not allowed to use basename, grep, egrep, fgrep or rgrep
+
+- Write a script that lists all the files with a .gif extension in the current directory and all its sub-directories.
+  - Hidden files should be listed
+  - Only regular files (not directories) should be listed
+  - The names of the files should be displayed without their extensions
+  - The files should be sorted by byte values, but case-insensitive (file aaa should be listed before file bbb, file .b should be listed before file a, and file Rona should be listed after file jay)
+  - One file name per line
+  - The listing should end with a new line
+  - You are not allowed to use basename, grep, egrep, fgrep or rgrep
+
 ```sh
     julien@production-503e7013:~/shell/fun_with_the_shell$ ls -Rla
     .:
@@ -699,15 +751,17 @@ rudy_rigot.gif
     docker
     Electra_napping
     main
- ```
- 
+```
+
 ### [25. Acrostic ](./102-acrostic)
-* An acrostic is a poem (or other form of writing) in which the first letter (or syllable, or word) of each line (or paragraph, or other recurring feature in the text) spells out a word, message or the alphabet. The word comes from the French acrostiche from post-classical Latin acrostichis). As a form of constrained writing, an acrostic can be used as a mnemonic device to aid memory retrieval. Read more.
-  * Create a script that decodes acrostics that use the first letter of each line.
-  * The ‘decoded’ message has to end with a new line
-  * You are not allowed to use grep, egrep, fgrep or rgrep
- ```sh
- julien@ubuntu:/tmp/0x02$ cat An\ Acrostic 
+
+- An acrostic is a poem (or other form of writing) in which the first letter (or syllable, or word) of each line (or paragraph, or other recurring feature in the text) spells out a word, message or the alphabet. The word comes from the French acrostiche from post-classical Latin acrostichis). As a form of constrained writing, an acrostic can be used as a mnemonic device to aid memory retrieval. Read more.
+  - Create a script that decodes acrostics that use the first letter of each line.
+  - The ‘decoded’ message has to end with a new line
+  - You are not allowed to use grep, egrep, fgrep or rgrep
+
+```sh
+julien@ubuntu:/tmp/0x02$ cat An\ Acrostic
 Elizabeth it is in vain you say
 Love not"—thou sayest it in so sweet a way:
 In vain those words from thee or L.E.L.
@@ -717,27 +771,29 @@ Breath it less gently forth—and veil thine eyes.
 Endymion, recollect, when Luna tried
 To cure his love—was cured of all beside—
 His follie—pride—and passion—for he died.
-julien@ubuntu:/tmp/0x02$ ./102-acrostic < An\ Acrostic 
+julien@ubuntu:/tmp/0x02$ ./102-acrostic < An\ Acrostic
 ELIZABETH
 ```
 
 ### [26. The biggest fan ](./103-the_biggest_fan)
-* Write a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
-  * Order by number of requests, most active host or IP at the top
-  * You are not allowed to use grep, egrep, fgrep or rgrep
+
+- Write a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
+  - Order by number of requests, most active host or IP at the top
+  - You are not allowed to use grep, egrep, fgrep or rgrep
+
 ```sh
 julien@ubuntu:/tmp/0x02$ head nasa_19950801.tsv
 host    logname time    method  url response    bytes   referer useragent
-pppa006.compuserve.com  -   807256800   GET /images/launch-logo.gif 200 1713        
-vcc7.langara.bc.ca  -   807256804   GET /shuttle/missions/missions.html 200 8677        
-pppa006.compuserve.com  -   807256806   GET /history/apollo/images/apollo-logo1.gif 200 1173        
+pppa006.compuserve.com  -   807256800   GET /images/launch-logo.gif 200 1713
+vcc7.langara.bc.ca  -   807256804   GET /shuttle/missions/missions.html 200 8677
+pppa006.compuserve.com  -   807256806   GET /history/apollo/images/apollo-logo1.gif 200 1173
 thing1.cchem.berkeley.edu   -   807256870   GET /shuttle/missions/sts-70/sts-70-day-03-highlights.html  200 4705
-202.236.34.35   -   807256881   GET /whats-new.html 200 18936       
-bettong.client.uq.oz.au -   807256884   GET /history/skylab/skylab.html 200 1687        
-202.236.34.35   -   807256884   GET /images/whatsnew.gif    200 651     
-202.236.34.35   -   807256885   GET /images/KSC-logosmall.gif   200 1204        
-bettong.client.uq.oz.au -   807256900   GET /history/skylab/skylab.html 304 0   
-julien@ubuntu:/tmp/0x02$ ./103-the_biggest_fan < nasa_19950801.tsv 
+202.236.34.35   -   807256881   GET /whats-new.html 200 18936
+bettong.client.uq.oz.au -   807256884   GET /history/skylab/skylab.html 200 1687
+202.236.34.35   -   807256884   GET /images/whatsnew.gif    200 651
+202.236.34.35   -   807256885   GET /images/KSC-logosmall.gif   200 1204
+bettong.client.uq.oz.au -   807256900   GET /history/skylab/skylab.html 304 0
+julien@ubuntu:/tmp/0x02$ ./103-the_biggest_fan < nasa_19950801.tsv
 edams.ksc.nasa.gov
 130.110.74.81
 www-relay.pa-x.dec.com
@@ -752,4 +808,5 @@ arc.dental.upenn.edu
 ```
 
 ## Author
-* **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
+
+- **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)

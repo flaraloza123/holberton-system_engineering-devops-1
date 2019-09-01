@@ -3,89 +3,106 @@
 ## Learning Objectives
 
 General
-* What happens when you type $ ls -l *.txt
+
+- What happens when you type \$ ls -l \*.txt
 
 Shell Initialization Files
-* What are the /etc/profile file and the /etc/profile.d directory
-* What is the ~/.bashrc file
+
+- What are the /etc/profile file and the /etc/profile.d directory
+- What is the ~/.bashrc file
 
 Variables
-* What is the difference between a local and a global variable
-* What is a reserved variable
-* How to create, update and delete shell variables
-* What are the roles of the following reserved variables: HOME, PATH, PS1
-* What are special parameters
-* What is the special parameter $??
+
+- What is the difference between a local and a global variable
+- What is a reserved variable
+- How to create, update and delete shell variables
+- What are the roles of the following reserved variables: HOME, PATH, PS1
+- What are special parameters
+- What is the special parameter \$??
 
 Expansions
-* What is expansion and how to use them
-* What is the difference between single and double quotes and how to use them properly
-* How to do command substitution with $() and backticks
+
+- What is expansion and how to use them
+- What is the difference between single and double quotes and how to use them properly
+- How to do command substitution with \$() and backticks
 
 Shell Arithmetic
-* How to perform arithmetic operations with the shell
+
+- How to perform arithmetic operations with the shell
 
 The alias Command
-* How to create an alias
-* How to list aliases
-* How to temporarily disable an alias
+
+- How to create an alias
+- How to list aliases
+- How to temporarily disable an alias
 
 Other help pages
-* How to execute commands from a file in the current shell
+
+- How to execute commands from a file in the current shell
 
 ## Requirements
 
-* All files are created and compiled on Ubuntu 14.04.4 LTS.
-* All Bash scripts are linted with Shellcheck.
+- All files are created and compiled on Ubuntu 14.04.4 LTS
+- All Bash scripts are linted with Shellcheck
 
 ## Tasks
 
-### [0. o](./0-alias )
-* Create a script that creates an alias.
-  * Name: ls
-  * Value: rm *
+### [0. o](./0-alias)
+
+- Create a script that creates an alias.
+  - Name: ls
+  - Value: rm \*
+
 ```sh
 julien@ubuntu:/tmp/0x03$ ls
 0-alias  file1  file2
-julien@ubuntu:/tmp/0x03$ source ./0-alias 
+julien@ubuntu:/tmp/0x03$ source ./0-alias
 julien@ubuntu:/tmp/0x03$ ls
 julien@ubuntu:/tmp/0x03$ \ls
 ```
 
-### [1. Hello you](./1-hello_you )
-* Create a script that prints hello user, where user is the current Linux user.
+### [1. Hello you](./1-hello_you)
+
+- Create a script that prints hello user, where user is the current Linux user.
+
 ```sh
 julien@ubuntu:/tmp/0x03$ id
 uid=1000(julien) gid=1000(julien) groups=1000(julien),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
-julien@ubuntu:/tmp/0x03$ ./1-hello_you 
+julien@ubuntu:/tmp/0x03$ ./1-hello_you
 hello julien
 ```
 
 ### [2. The path to success is to take massive, determined action](./2-path)
-* Add /action to the PATH.
-/action should be the last directory the shell looks into when looking for a program.
+
+- Add /action to the PATH.
+  /action should be the last directory the shell looks into when looking for a program.
+
 ```sh
 julien@ubuntu:/tmp/0x03$ echo $PATH
 /home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-julien@ubuntu:/tmp/0x03$ source ./2-path 
+julien@ubuntu:/tmp/0x03$ source ./2-path
 julien@ubuntu:/tmp/0x03$ echo $PATH
 /home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/action
 ```
 
 ### [3. If the path be beautiful, let us not ask where it leads](./3-paths)
-* Create a script that counts the number of directories in the PATH.
+
+- Create a script that counts the number of directories in the PATH.
+
 ```sh
 julien@ubuntu:/tmp/0x03$ echo $PATH
 /home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-julien@ubuntu:/tmp/0x03$ . ./3-paths 
+julien@ubuntu:/tmp/0x03$ . ./3-paths
 11
 julien@ubuntu:/tmp/0x03$ PATH=/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:::::/hello
-julien@ubuntu:/tmp/0x03$ . ./3-paths 
+julien@ubuntu:/tmp/0x03$ . ./3-paths
 12
 ```
 
 ### [4. Global variables](./4-global_variables)
-* Create a script that lists environment variables.
+
+- Create a script that lists environment variables.
+
 ```sh
 julien@ubuntu:/tmp/0x03$ source ./4-global_variables
 CC=gcc
@@ -127,7 +144,9 @@ LOGNAME=franky
 ```
 
 ### [5. Local variables](./5-local_variables)
-* Create a script that lists all local variables and environment variables, and functions.
+
+- Create a script that lists all local variables and environment variables, and functions.
+
 ```sh
 julien@ubuntu:/tmp/0x03$ . ./5-local_variables
 BASH=/bin/bash
@@ -153,17 +172,21 @@ DESKTOP_SESSION=ubuntu
 ```
 
 ### [6. Local variable](./6-create_local_variable)
-* Create a script that creates a new local variable.
-  * Name: BETTY
-  * Value: Holberton
+
+- Create a script that creates a new local variable.
+  - Name: BETTY
+  - Value: Holberton
 
 ### [7. Global variable](./7-create_global_variable)
-* Create a script that creates a new global variable.
-  * Name: HOLBERTON
-  * Value: Betty
+
+- Create a script that creates a new global variable.
+  - Name: HOLBERTON
+  - Value: Betty
 
 ### [8. Every addition to true knowledge is an addition to human power](./8-true_knowledge)
-* Write a script that prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE, followed by a new line.
+
+- Write a script that prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE, followed by a new line.
+
 ```sh
 julien@production-503e7013:~$ export TRUEKNOWLEDGE=1209
 julien@production-503e7013:~$ ./8-true_knowledge | cat -e
@@ -171,8 +194,10 @@ julien@production-503e7013:~$ ./8-true_knowledge | cat -e
 ```
 
 ### [9. Divide and rule](./9-divide_and_rule)
-* Write a script that prints the result of POWER divided by DIVIDE, followed by a new line.
-  * POWER and DIVIDE are environment variables
+
+- Write a script that prints the result of POWER divided by DIVIDE, followed by a new line.
+  - POWER and DIVIDE are environment variables
+
 ```sh
 julien@production-503e7013:~$ export POWER=42784
 julien@production-503e7013:~$ export DIVIDE=32
@@ -181,9 +206,11 @@ julien@production-503e7013:~$ ./9-divide_and_rule | cat -e
 ```
 
 ### [10. Love is anterior to life, posterior to death, initial of creation, and the exponent of breath](./10-love_exponent_breath)
-* Write a script that displays the result of BREATH to the power LOVE
-  * BREATH and LOVE are environment variables
-  * The script should display the result, followed by a new line
+
+- Write a script that displays the result of BREATH to the power LOVE
+  - BREATH and LOVE are environment variables
+  - The script should display the result, followed by a new line
+
 ```sh
 julien@production-503e7013:~/$ export BREATH=4
 julien@production-503e7013:~/$ export LOVE=3
@@ -192,9 +219,11 @@ julien@production-503e7013:~/$ ./10-love_exponent_breath
 ```
 
 ### [11. There are 10 types of people in the world -- Those who understand binary, and those who don't](./11-binary_to_decimal)
-* Write a script that converts a number from base 2 to base 10.
-  * The number in base 2 is stored in the environment variable BINARY
-  * The script should display the number in base 10, followed by a new line
+
+- Write a script that converts a number from base 2 to base 10.
+  - The number in base 2 is stored in the environment variable BINARY
+  - The script should display the number in base 10, followed by a new line
+
 ```sh
 julien@production-503e7013:~/$ export BINARY=10100111001
 julien@production-503e7013:~/$ ./11-binary_to_decimal
@@ -202,18 +231,20 @@ julien@production-503e7013:~/$ ./11-binary_to_decimal
 ```
 
 ### [12. Combination](./12-combinations)
-* Create a script that prints all possible combinations of two letters, except oo.
-  * Letters are lower cases, from a to z
-  * One combination per line
-  * The output should be alpha ordered, starting with aa
-  * Do not print oo
-  * Your script file should contain maximum 64 characters
+
+- Create a script that prints all possible combinations of two letters, except oo.
+  - Letters are lower cases, from a to z
+  - One combination per line
+  - The output should be alpha ordered, starting with aa
+  - Do not print oo
+  - Your script file should contain maximum 64 characters
+
 ```sh
 julien@ubuntu:/tmp/0x03$ echo $((26 ** 2 -1))
 675
 julien@ubuntu:/tmp/0x03$ ./12-combinations | wc -l
 675
-julien@ubuntu:/tmp/0x03$ 
+julien@ubuntu:/tmp/0x03$
 julien@ubuntu:/tmp/0x03$ ./12-combinations | tail -303 | head -10
 oi
 oj
@@ -228,8 +259,10 @@ os
 ```
 
 ### [13. Floats](./13-print_float)
-* Write a script that prints a number with two decimal places.
-  * The number will be stored in the environment variable NUM.
+
+- Write a script that prints a number with two decimal places.
+  - The number will be stored in the environment variable NUM.
+
 ```sh
 ubuntu@ip-172-31-63-244:~/0x03$ export NUM=0
 ubuntu@ip-172-31-63-244:~/0x03$ ./13-print_float
@@ -243,9 +276,11 @@ ubuntu@ip-172-31-63-244:~/0x03$ ./13-print_float
 ```
 
 ### [14. Decimal to Hexadecimal](./14-decimal_to_hexadecimal)
-* Write a script that converts a number from base 10 to base 16.
-  * The number in base 10 is stored in the environment variable DECIMAL
-  * The script should display the number in base 16, followed by a new line
+
+- Write a script that converts a number from base 10 to base 16.
+  - The number in base 10 is stored in the environment variable DECIMAL
+  - The script should display the number in base 16, followed by a new line
+
 ```sh
 julien@production-503e7013:~/$ export DECIMAL=16
 julien@production-503e7013:~/$ ./14-decimal_to_hexadecimal
@@ -258,15 +293,19 @@ julien@production-503e7013:~/$ ./14-decimal_to_hexadecimal | cat -e
 f$
 ```
 
-### [15. What happens when you type ls *.c](https://medium.com/@tuvo1106/what-happens-when-you-type-ls-c-dd83bd1311b7)
-* Write a blog post describing step by step what happens when you type ls *.c and hit Enter in your shell.
-Try to explain every step you know of, and give examples. A total beginner should understand what you have written.
+### [15. What happens when you type ls \*.c](https://medium.com/@tuvo1106/what-happens-when-you-type-ls-c-dd83bd1311b7)
+
+- Write a blog post describing step by step what happens when you type ls \*.c and hit Enter in your shell.
+  Try to explain every step you know of, and give examples. A total beginner should understand what you have written.
 
 ### [16. What is the difference between a hard link and a symbolic link?](https://medium.com/@tuvo1106/what-is-the-difference-between-a-hard-link-and-a-symbolic-link-7b1e256a313c)
-* Write a blog post explaining what are hard and symbolic links on Linux, how to create them, and what is the difference between the two. Use examples to illustrate.
+
+- Write a blog post explaining what are hard and symbolic links on Linux, how to create them, and what is the difference between the two. Use examples to illustrate.
 
 ### [17. Everyone is a proponent of strong encryption](./100-rot13)
-* Write a script that encodes and decodes text using the rot13 encryption. Assume ASCII.
+
+- Write a script that encodes and decodes text using the rot13 encryption. Assume ASCII.
+
 ```sh
 julien@production-503e7013:~/shell/fun_with_the_shell$ cat quote
 "Everyone is a proponent of strong encryption."
@@ -277,7 +316,9 @@ julien@production-503e7013:~/shell/fun_with_the_shell$ ./100-rot13 < quote
 ```
 
 ### [18. The eggs of the brood need to be an odd number](./101-odd)
-* Write a script that prints every other line from the input, starting with the first line.
+
+- Write a script that prints every other line from the input, starting with the first line.
+
 ```sh
 ubuntu@ip-172-31-63-244:/$ \ls -1
 bin
@@ -326,10 +367,12 @@ vmlinuz
 ```
 
 ### [19. I'm an instant star. Just add water and stir.](./102-water_and_stir)
-* Write a shell script that adds the two numbers stored in the environment variables WATER and STIR and prints the result.
-  * WATER is in base water
-  * STIR is in base stir.
-  * The result should be in base behlnort
+
+- Write a shell script that adds the two numbers stored in the environment variables WATER and STIR and prints the result.
+  - WATER is in base water
+  - STIR is in base stir.
+  - The result should be in base behlnort
+
 ```sh
 julien@production-503e7013:~$ export WATER="ewwatratewa"
 julien@production-503e7013:~$ export STIR="ti.itirtrtr"
@@ -338,4 +381,5 @@ holberton
 ```
 
 ## Author
-* **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
+
+- **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
