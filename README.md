@@ -31,4 +31,4 @@ This repository contains programs written in Bash for the System Engineering and
 
 ## Author
 
-**Tu Vo**
+- **Tu Vo** - [tuvo1106](https:///github.com/tuvo1106)
