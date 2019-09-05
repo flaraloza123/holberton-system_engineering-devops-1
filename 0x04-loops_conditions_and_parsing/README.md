@@ -3,33 +3,38 @@
 ## Learning Objectives
 
 General
-* How to create SSH keys
-* What is the advantage of using  #!/usr/bin/env bash over #!/bin/bash
-* How to use while, until and for loops
-* How to use if, else, elif and case condition statements
-* How to use the cut command
-* What are files and other comparison operators, and how to use them
+
+- How to create SSH keys
+- What is the advantage of using #!/usr/bin/env bash over #!/bin/bash
+- How to use while, until and for loops
+- How to use if, else, elif and case condition statements
+- How to use the cut command
+- What are files and other comparison operators, and how to use them
 
 ## Requirements
 
-* All files are created and compiled on Ubuntu 14.04.4 LTS
-* All files are linted with Shellcheck.
+- All files are created and compiled on Ubuntu 14.04.4 LTS
+- All files are linted with Shellcheck
 
 ## Tasks
 
 ### [0. Create a SSH RSA key pair](./0-RSA_public_key.pub)
-* Create a RSA key pair.
+
+- Create a RSA key pair.
+
 ```sh
 ssh-keygen -t rsa
 ```
 
 ### [1. For Holberton School loop](./1-for_holberton_school)
-* Write a Bash script that displays Holberton School 10 times.
+
+- Write a Bash script that displays Holberton School 10 times.
+
 ```sh
-sylvain@ubuntu$ head -n 2 1-for_holberton_school 
+sylvain@ubuntu$ head -n 2 1-for_holberton_school
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
-sylvain@ubuntu$ ./1-for_holberton_school 
+sylvain@ubuntu$ ./1-for_holberton_school
 Holberton School
 Holberton School
 Holberton School
@@ -43,7 +48,9 @@ Holberton School
 ```
 
 ### [2. While Holberton School loop](./2-while_holberton_school)
-* Write a Bash script that displays Holberton School 10 times.
+
+- Write a Bash script that displays Holberton School 10 times.
+
 ```sh
 sylvain@ubuntu$ ./2-while_holberton_school
 Holberton School
@@ -59,7 +66,9 @@ Holberton School
 ```
 
 ### [3. Until Holberton School loop](./3-until_holberton_school)
-* Write a Bash script that displays Holberton School 10 times.
+
+- Write a Bash script that displays Holberton School 10 times.
+
 ```sh
 sylvain@ubuntu$ ./3-until_holberton_school
 Holberton School
@@ -75,8 +84,10 @@ Holberton School
 ```
 
 ### [4. If 9, say Hi!](./4-if_9_say_hi)
-* Write a Bash script that displays Holberton School 10 times, but for the 9th iteration, displays Holberton School and then Hi on a new line.
-  * You must use the if statement
+
+- Write a Bash script that displays Holberton School 10 times, but for the 9th iteration, displays Holberton School and then Hi on a new line.
+  - You must use the if statement
+
 ```sh
 sylvain@ubuntu$ ./4-if_9_say_hi
 Holberton School
@@ -93,12 +104,14 @@ Holberton School
 ```
 
 ### [5. 4 bad luck, 8 is your chance](./5-4_bad_luck_8_is_your_chance)
-* Write a Bash script that loops from 1 to 10 and:
-  * displays bad luck for the 4th loop iteration
-  * displays good luck for the 8th loop iteration
-  * displays Holberton School for the other iterations
-  * You must use the while loop (for and until are forbidden)
-  * You must use the if, elif and else statements
+
+- Write a Bash script that loops from 1 to 10 and:
+  - displays bad luck for the 4th loop iteration
+  - displays good luck for the 8th loop iteration
+  - displays Holberton School for the other iterations
+  - You must use the while loop (for and until are forbidden)
+  - You must use the if, elif and else statements
+
 ```sh
 sylvain@ubuntu$ ./5-4_bad_luck_8_is_your_chance
 Holberton School
@@ -114,11 +127,13 @@ Holberton School
 ```
 
 ### [6. Superstitious numbers](./6-superstitious_numbers)
-* Write a Bash script that displays numbers from 1 to 20 and:
-  * displays 4 and then bad luck from China for the 4th loop iteration
-  * displays 9 and then bad luck from Japan for the 9th loop iteration
-  * displays 17 and then bad luck from Italy for the 17th loop iteration
-  * You must use the case statement
+
+- Write a Bash script that displays numbers from 1 to 20 and:
+  - displays 4 and then bad luck from China for the 4th loop iteration
+  - displays 9 and then bad luck from Japan for the 9th loop iteration
+  - displays 17 and then bad luck from Italy for the 17th loop iteration
+  - You must use the case statement
+
 ```sh
 sylvain@ubuntu$ ./6-superstitious_numbers
 1
@@ -147,9 +162,11 @@ bad luck from Italy
 ```
 
 ### [7. Clock](./7-clock)
-* Write a Bash script that displays the time for 12 hours and 59 minutes:
-  * display hours from 0 to 12
-  * display minutes from 1 to 59
+
+- Write a Bash script that displays the time for 12 hours and 59 minutes:
+  - display hours from 0 to 12
+  - display minutes from 1 to 59
+
 ```sh
 sylvain@ubuntu$ ./7-clock | head -n 70
 Hour: 0
@@ -225,12 +242,14 @@ Hour: 1
 ```
 
 ### [8. For ls](./8-for_ls)
-* Write a Bash script that displays:
-  * The content of the current directory
-  * In a list format
-  * Where only the part of the name after the first dash is displayed (refer to the example)
-  * You must use the for loop (while and until are forbidden)
-  * Do not display hidden files
+
+- Write a Bash script that displays:
+  - The content of the current directory
+  - In a list format
+  - Where only the part of the name after the first dash is displayed (refer to the example)
+  - You must use the for loop (while and until are forbidden)
+  - Do not display hidden files
+
 ```sh
 sylvain@ubuntu$ ls
 100-read_and_cut              1-for_holberton_school         6-superstitious_numbers
@@ -256,44 +275,48 @@ to_file_or_not_to_file
 ```
 
 ### [9. To file, or not to file](./9-to_file_or_not_to_file)
-* Write a Bash script that gives you information about the holbertonschool file.
-  * You must use if and, else (case is forbidden)
-  * Your Bash script should check if the file exists and print:
-    * if the file exists: holbertonschool file exists
-    * if the file does not exist: holbertonschool file does not exist
-  * If the file exists, print:
-    * if the file is empty: holbertonschool file is empty
-    * if the file is not empty: holbertonschool file is not empty
-    * if the file is a regular file: holbertonschool is a regular file
-    * if the file is not a regular file: (nothing)
+
+- Write a Bash script that gives you information about the holbertonschool file.
+  - You must use if and, else (case is forbidden)
+  - Your Bash script should check if the file exists and print:
+    - if the file exists: holbertonschool file exists
+    - if the file does not exist: holbertonschool file does not exist
+  - If the file exists, print:
+    - if the file is empty: holbertonschool file is empty
+    - if the file is not empty: holbertonschool file is not empty
+    - if the file is a regular file: holbertonschool is a regular file
+    - if the file is not a regular file: (nothing)
+
 ```sh
 sylvain@ubuntu$ file holbertonschool
 holbertonschool: cannot open `holbertonschool' (No such file or directory)
-sylvain@ubuntu$ ./9-to_file_or_not_to_file 
+sylvain@ubuntu$ ./9-to_file_or_not_to_file
 holbertonschool file does not exist
 sylvain@ubuntu$ touch holbertonschool
-sylvain@ubuntu$ ./9-to_file_or_not_to_file 
+sylvain@ubuntu$ ./9-to_file_or_not_to_file
 holbertonschool file exists
 holbertonschool file is empty
 holbertonschool is a regular file
-sylvain@ubuntu$ echo 'betty' > holbertonschool 
-sylvain@ubuntu$ ./9-to_file_or_not_to_file 
+sylvain@ubuntu$ echo 'betty' > holbertonschool
+sylvain@ubuntu$ ./9-to_file_or_not_to_file
 holbertonschool file exists
 holbertonschool file is not empty
 holbertonschool is a regular file
-sylvain@ubuntu$ rm holbertonschool 
+sylvain@ubuntu$ rm holbertonschool
 sylvain@ubuntu$ mkdir holbertonschool
-sylvain@ubuntu$ ./9-to_file_or_not_to_file 
+sylvain@ubuntu$ ./9-to_file_or_not_to_file
 holbertonschool file exists
 holbertonschool file is not empty
 ```
 
 ### [10. FizzBuzz](./10-fizzbuzz)
-* Write a Bash script that displays numbers from 1 to 100.
-  * Displays FizzBuzz when the number is a multiple of 3 and 5
-  * Displays Fizz when the number is multiple of 3
-  * Displays Buzz when the number is a multiple of 5
-  * Otherwise, displays the number in a list format
+
+- Write a Bash script that displays numbers from 1 to 100.
+  - Displays FizzBuzz when the number is a multiple of 3 and 5
+  - Displays Fizz when the number is multiple of 3
+  - Displays Buzz when the number is a multiple of 5
+  - Otherwise, displays the number in a list format
+
 ```sh
 sylvain@ubuntu$ ./10-fizzbuzz | head -20
 1
@@ -319,11 +342,13 @@ Buzz
 ```
 
 ### [11. Read and cut](./100-read_and_cut)
-* Write a Bash script that displays the content of the file /etc/passwd.
-  * Your script should only display:
-    * username
-    * user id
-    * Home directory path for the user
+
+- Write a Bash script that displays the content of the file /etc/passwd.
+  - Your script should only display:
+    - username
+    - user id
+    - Home directory path for the user
+
 ```sh
 sylvain@ubuntu$ cat /etc/passwd
 root:x:0:0:root:/root:/bin/bash
@@ -390,7 +415,9 @@ ubuntu:1001:/home/ubuntu
 ```
 
 ### [12. Tell the story of passwd](./101-tell_the_story_of_passwd)
-* Write a Bash script that displays the content of the file /etc/passwd, using the while loop + IFS.
+
+- Write a Bash script that displays the content of the file /etc/passwd, using the while loop + IFS.
+
 ```sh
 sylvain@ubuntu$ ./101-tell_the_story_of_passwd
 The user root is part of the 0 gang, lives in /root and rides /bin/bash. 0's place is protected by the passcode x, more info about the user here: root
@@ -411,21 +438,23 @@ The user list is part of the 38 gang, lives in /var/list and rides /usr/sbin/nol
 The user irc is part of the 39 gang, lives in /var/run/ircd and rides /usr/sbin/nologin. 39's place is protected by the passcode x, more info about the user here: ircd
 The user gnats is part of the 41 gang, lives in /var/lib/gnats and rides /usr/sbin/nologin. 41's place is protected by the passcode x, more info about the user here: Gnats Bug-Reporting System (admin)
 The user nobody is part of the 65534 gang, lives in /nonexistent and rides /usr/sbin/nologin. 65534's place is protected by the passcode x, more info about the user here: nobody
-The user libuuid is part of the 101 gang, lives in /var/lib/libuuid and rides . 100's place is protected by the passcode x, more info about the user here: 
-The user syslog is part of the 104 gang, lives in /home/syslog and rides /bin/false. 101's place is protected by the passcode x, more info about the user here: 
-The user messagebus is part of the 106 gang, lives in /var/run/dbus and rides /bin/false. 102's place is protected by the passcode x, more info about the user here: 
-The user landscape is part of the 109 gang, lives in /var/lib/landscape and rides /bin/false. 103's place is protected by the passcode x, more info about the user here: 
-The user sshd is part of the 65534 gang, lives in /var/run/sshd and rides /usr/sbin/nologin. 104's place is protected by the passcode x, more info about the user here: 
-The user pollinate is part of the 1 gang, lives in /var/cache/pollinate and rides /bin/false. 105's place is protected by the passcode x, more info about the user here: 
-The user vagrant is part of the 1000 gang, lives in /home/vagrant and rides /bin/bash. 1000's place is protected by the passcode x, more info about the user here: 
+The user libuuid is part of the 101 gang, lives in /var/lib/libuuid and rides . 100's place is protected by the passcode x, more info about the user here:
+The user syslog is part of the 104 gang, lives in /home/syslog and rides /bin/false. 101's place is protected by the passcode x, more info about the user here:
+The user messagebus is part of the 106 gang, lives in /var/run/dbus and rides /bin/false. 102's place is protected by the passcode x, more info about the user here:
+The user landscape is part of the 109 gang, lives in /var/lib/landscape and rides /bin/false. 103's place is protected by the passcode x, more info about the user here:
+The user sshd is part of the 65534 gang, lives in /var/run/sshd and rides /usr/sbin/nologin. 104's place is protected by the passcode x, more info about the user here:
+The user pollinate is part of the 1 gang, lives in /var/cache/pollinate and rides /bin/false. 105's place is protected by the passcode x, more info about the user here:
+The user vagrant is part of the 1000 gang, lives in /home/vagrant and rides /bin/bash. 1000's place is protected by the passcode x, more info about the user here:
 The user colord is part of the 112 gang, lives in /var/lib/colord and rides /bin/false. 106's place is protected by the passcode x, more info about the user here: colord colour management daemon,,,
-The user statd is part of the 65534 gang, lives in /var/lib/nfs and rides /bin/false. 107's place is protected by the passcode x, more info about the user here: 
+The user statd is part of the 65534 gang, lives in /var/lib/nfs and rides /bin/false. 107's place is protected by the passcode x, more info about the user here:
 The user puppet is part of the 114 gang, lives in /var/lib/puppet and rides /bin/false. 108's place is protected by the passcode x, more info about the user here: Puppet configuration management daemon,,,
 The user ubuntu is part of the 1001 gang, lives in /home/ubuntu and rides /bin/bash. 1001's place is protected by the passcode x, more info about the user here: Ubuntu
 ```
 
 ### [13. Let's parse Apache logs](./102-lets_parse_apache_logs)
-* Write a Bash script that displays the visitor IP along with the HTTP status code from the Apache log file.
+
+- Write a Bash script that displays the visitor IP along with the HTTP status code from the Apache log file.
+
 ```sh
 sylvain@ubuntu$ ./102-lets_parse_apache_logs | tail -n 10
 185.130.5.207 301
@@ -441,7 +470,9 @@ sylvain@ubuntu$ ./102-lets_parse_apache_logs | tail -n 10
 ```
 
 ### [14. Dig the data](./103-dig_the-data)
-* Write a Bash script that groups visitors by IP and HTTP status code, and displays this data.
+
+- Write a Bash script that groups visitors by IP and HTTP status code, and displays this data.
+
 ```sh
 sylvain@ubuntu$ ./103-dig_the-data | head -n 10
     141 130.0.236.153 200
@@ -457,4 +488,5 @@ sylvain@ubuntu$ ./103-dig_the-data | head -n 10
 ```
 
 ## Author
-* **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
+
+- **Tu Vo** - [tuvo1106](https://github.com/tuvo1106)
