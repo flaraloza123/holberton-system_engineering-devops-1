@@ -1,10 +1,5 @@
 # 0x14. Mysql
 
-## Requirements
-
-- All Bash scripts are created and compiled on Ubuntu 14.04.4 LTS
-- All Bash scripts are linted with Shellcheck
-
 ## Learning Objectives
 
 * What is the main role of a database
@@ -12,6 +7,11 @@
 * What is the purpose of a database replica
 * Why database backups need to be stored in different physical locations
 * What operation should you regularly perform to make sure that your database backup strategy actually works
+
+## Requirements
+
+- All Bash scripts are created and compiled on Ubuntu 14.04.4 LTS
+- All Bash scripts are linted with Shellcheck
 
 ## Tasks
 
