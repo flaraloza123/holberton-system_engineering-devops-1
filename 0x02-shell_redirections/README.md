@@ -26,7 +26,7 @@ Other Man Pages
 
 ## Requirements
 
-- All files are created and compiled on Ubuntu 14.04.4 LTS
+- All Bash scripts are created and compiled on Ubuntu 14.04.4 LTS
 
 ## Tasks
 
