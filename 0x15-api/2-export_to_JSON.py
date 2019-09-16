@@ -11,11 +11,10 @@ from sys import argv
 
 def get_employee_tasks(user_id):
     '''Retrieves employees and tasks'''
-    root_url = 'https://jsonplaceholder.typicode.com/'
-    user_req = root_url + 'users/{}'.format(user_id)
+    url = 'https://jsonplaceholder.typicode.com/'
+    user_req = url + 'users/{}'.format(user_id)
     employee = requests.get(user_req).json()
-    employee_id = employee.get('id')
-    task_req = root_url + 'todos?userId={}'.format(employee_id)
+    task_req = url + 'todos?userId={}'.format(employee.get('id'))
     tasks = requests.get(task_req).json()
     return {"employee": employee, "tasks": tasks}
 
