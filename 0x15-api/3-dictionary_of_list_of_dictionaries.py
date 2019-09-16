@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 '''
-Script for exporting al employee data into json
+Script for exporting all employee data into json
 '''
 
 import json

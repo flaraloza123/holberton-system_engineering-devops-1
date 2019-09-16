@@ -24,14 +24,12 @@ def export_to_json(data):
     _id = data.get('employee').get('id')
     _array = []
     for task in data.get('tasks'):
-        new_dict = {}
-        new_dict['task'] = task.get('title')
-        new_dict['completed'] = task.get('completed')
-        new_dict['username'] = data.get('employee').get('username')
-        _array.append(new_dict)
-    _dict = {
-            _id: _array
-         }
+        d = {}
+        d['task'] = task.get('title')
+        d['completed'] = task.get('completed')
+        d['username'] = data.get('employee').get('username')
+        _array.append(d)
+    _dict = {_id: _array}
     with open('{}.json'.format(_id), 'w') as json_file:
         json.dump(_dict, json_file)
 
