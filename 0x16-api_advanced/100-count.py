@@ -17,7 +17,7 @@ def count_words(subreddit, word_list, _dict={}, after=None):
     if after:
         url += '?after={}'.format(after)
     try:
-        r = requests.get(url, headers=headers).json()
+        r = requests.get(url, headers=headers, allow_redirects=False).json()
         _list = r.get('data').get('children')
         for li in _list:
             title = li.get('data').get('title').lower().split(' ')
