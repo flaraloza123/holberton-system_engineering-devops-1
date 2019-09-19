@@ -16,24 +16,23 @@ def count_words(subreddit, word_list, _dict={}, after=None):
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
     if after:
         url += '?after={}'.format(after)
-    r = requests.get(url, headers=headers).json()
-    if r.get('error') == 404:
-        print()
-        return
-    _list = r.get('data').get('children')
-    for li in _list:
-        title = li.get('data').get('title')
-        _dict = count(_dict, word_list, title)
-    after = r.get('data').get('after')
-    if after is None:
-        return print_sorted_dict(_dict)
-    return count_words(subreddit, word_list, _dict, after)
+    try:
+        r = requests.get(url, headers=headers).json()
+        _list = r.get('data').get('children')
+        for li in _list:
+            title = li.get('data').get('title')
+            _dict = count(_dict, word_list, title)
+        after = r.get('data').get('after')
+        if after is None:
+            return print_sorted_dict(_dict)
+        return count_words(subreddit, word_list, _dict, after)
+    except Exception:
+        return None
 
 
 def count(_dict, word_list, sentence):
     ''' count words in a sentence from a given list'''
-    for s in sentence.split(' '):
-        s = s.lower()
+    for s in [x.lower() for x in sentence.split(' ')]:
         if s in [x.lower() for x in word_list]:
             if _dict.get(s):
                 _dict[s] += 1
