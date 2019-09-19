@@ -31,7 +31,7 @@ def count_words(subreddit, word_list, _dict={}, after=None):
 
 def count(_dict, word_list, sentence):
     ''' count words in a sentence from a given list'''
-    for s in set(sentence.split(' ')):
+    for s in sentence.split(' '):
         if s.lower() in word_list:
             if _dict.get(s.lower()):
                 _dict[s.lower()] += 1
