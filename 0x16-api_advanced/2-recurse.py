@@ -18,7 +18,7 @@ def recurse(subreddit, hot_list=[], after=None):
         url += '?after={}'.format(after)
     r = requests.get(url, headers=headers).json()
     if r.get('error') == 404:
-        return hot_list
+        return None
     _list = r.get('data').get('children')
     for li in _list:
         hot_list.append(li.get('data').get('title'))
