@@ -18,7 +18,8 @@ def count_words(subreddit, word_list, _dict={}, after=None):
         url += '?after={}'.format(after)
     r = requests.get(url, headers=headers).json()
     if r.get('error') == 404:
-        return print()
+        print()
+        return
     _list = r.get('data').get('children')
     for li in _list:
         title = li.get('data').get('title')
