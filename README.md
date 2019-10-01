@@ -30,6 +30,10 @@ This repository contains programs written in Bash for the System Engineering and
 | [0x13. Firewall](./0x13-firewall) | Setting up UFW to block/allow incoming traffic |
 | [0x14. Mysql](./0x14-mysql) | Implementing Primary-Replica infrastructure in MySQL |
 | [0x15. API](./0x15-api) | Python scripts to export data to CSV and JSON |
+| [0x16-api_advanced](./0x16-api_advanced)| Interacing with Reddit's API to scrape data |
+| [0x17-web_stack_debugging_3](./0x17-web_stack_debugging_3)| Debugging with strace |
+| [0x18-webstack_monitoring](./0x18-webstack_monitoring)| Monitoring system metrics with Datadog |
+| [0x19-postmortem](./0x19-postmortem)| How to write a Postmortem |
 
 ## Author
 
