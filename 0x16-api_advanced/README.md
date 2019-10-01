@@ -35,6 +35,9 @@ if __name__ == '__main__':
         print("Please pass an argument for the subreddit to search.")
     else:
         print("{:d}".format(number_of_subscribers(sys.argv[1])))
+```
+
+```sh
 wintermancer@lapbox ~/reddit_api/project $ python3 0-main.py programming
 756024
 wintermancer@lapbox ~/reddit_api/project $ python3 0-main.py this_is_a_fake_subreddit
@@ -46,7 +49,7 @@ wintermancer@lapbox ~/reddit_api/project $ python3 0-main.py this_is_a_fake_subr
 - Write a function that queries the Reddit API and prints the titles of the first 10 hot posts listed for a given subreddit.
 - Requirements:
 
-  - Prototype: def top_ten(subreddit)
+  - Prototype: `python def top_ten(subreddit)`
   - If not a valid subreddit, print None.
   - NOTE: Invalid subreddits may return a redirect to search results. Ensure that you are not following redirects.
 
@@ -64,6 +67,9 @@ if __name__ == '__main__':
         print("Please pass an argument for the subreddit to search.")
     else:
         top_ten(sys.argv[1])
+```
+
+```sh
 wintermancer@lapbox ~/reddit_api/project $ python3 1-main.py programming
 Firebase founder's response to last week's "Firebase Costs increased by 7000%!"
 How a 64k intro is made
@@ -140,6 +146,8 @@ if __name__ == '__main__':
         print("Ex: {} programming 'python java javascript'".format(sys.argv[0]))
     else:
         result = count_words(sys.argv[1], [x for x in sys.argv[2].split()])
+```
+```sh
 wintermancer@lapbox ~/reddit_api/project $ python3 100-main.py programming 'python java javascript scala no_results_for_this_one'
 java: 27
 javascript: 20
