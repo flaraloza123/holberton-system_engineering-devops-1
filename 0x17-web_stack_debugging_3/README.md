@@ -12,7 +12,7 @@
   - Your 0-strace_is_your_friend.pp file must contain Puppet code
   - You can use whatever Puppet resource type you want for you fix
 
-```sh
+```
 root@e514b399d69d:~# curl -sI 127.0.0.1
 HTTP/1.0 500 Internal Server Error
 Date: Fri, 24 Mar 2017 07:32:16 GMT
