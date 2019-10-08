@@ -113,15 +113,21 @@ ubuntu@229-web-01:~/AirBnB_clone_v2$ curl 127.0.0.1:5000/airbnb-onepage/
 Hello HBNB!ubuntu@229-web-01:~/AirBnB_clone_v2$
 
 ubuntu@229-web-01:~/AirBnB_clone_v2$ curl 127.0.0.1:5001/number_odd_or_even/6
+```
+```html
 <!DOCTYPE html>
 <HTML lang="en">
   <HEAD>
     <TITLE>HBNB</TITLE>
   </HEAD>
   <BODY><H1>Number: 6 is even</H1></BODY>
-</HTML>ubuntu@229-web-01:~/AirBnB_clone_v2
+</HTML>```
+```sh
+ubuntu@229-web-01:~/AirBnB_clone_v2
 ubuntu@229-web-01:~$ 
 ubuntu@229-web-01:~/AirBnB_clone_v2$ curl 127.0.0.1/airbnb-dynamic/number_odd_or_even/5
+```
+```html
 <!DOCTYPE html>
 <HTML lang="en">
   <HEAD>
@@ -132,7 +138,10 @@ ubuntu@229-web-01:~/AirBnB_clone_v2$ curl 127.0.0.1/airbnb-dynamic/number_odd_or
 
 Local
 ```sh
-vagrant@ubuntu-xenial:~$ curl 35.231.193.217/airbnb-dynamic/number_odd_or_even/6<!DOCTYPE html>
+vagrant@ubuntu-xenial:~$ curl 35.231.193.217/airbnb-dynamic/number_odd_or_even/6
+```
+```html
+<!DOCTYPE html>
 <HTML lang="en">
   <HEAD>
     <TITLE>HBNB</TITLE>
