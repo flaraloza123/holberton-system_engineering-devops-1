@@ -121,7 +121,8 @@ ubuntu@229-web-01:~/AirBnB_clone_v2$ curl 127.0.0.1:5001/number_odd_or_even/6
     <TITLE>HBNB</TITLE>
   </HEAD>
   <BODY><H1>Number: 6 is even</H1></BODY>
-</HTML>```
+</HTML>
+```
 ```sh
 ubuntu@229-web-01:~/AirBnB_clone_v2
 ubuntu@229-web-01:~$ 
