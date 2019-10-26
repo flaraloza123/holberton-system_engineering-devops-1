@@ -12,6 +12,9 @@ How to set up a HAProxy Load Balancer
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### [0. Double the number of webservers](./0-custom_http_response-header)
 
 - In this first task you need to configure web-02 to be identical to web-01. Fortunately, you built a Bash script during your web server project, and they’ll now come in handy to easily configure web-02. Remember, always try to automate your work!
@@ -21,7 +24,7 @@ How to set up a HAProxy Load Balancer
     - The value of the custom HTTP header must be the hostname of the server Nginx is running on
   - Write 0-custom_http_response-header so that it configures a brand new Ubuntu machine to the requirements asked in this task
 
-```sh
+```
 sylvain@ubuntu$ curl -sI 34.198.248.145 | grep X-Served-By
 X-Served-By: 03-web-01
 sylvain@ubuntu$ curl -sI 54.89.38.100 | grep X-Served-By
@@ -37,7 +40,7 @@ X-Served-By: 03-web-02
   - Make sure that your servers are configured with the right hostnames: [STUDENT_ID]-web-01 and [STUDENT_ID]-web-02. If not, follow this tutorial.
   - For your answer file, write a Bash script that configures a new Ubuntu machine to respect above requirements
 
-```sh
+```
 sylvain@ubuntu$ curl -Is 54.210.47.110
 HTTP/1.1 200 OK
 Server: nginx/1.4.6 (Ubuntu)
@@ -69,6 +72,8 @@ Accept-Ranges: bytes
   - The name of the custom HTTP header must be X-Served-By
   - The value of the custom HTTP header must be the hostname of the server Nginx is running on
   - Write 2-puppet_custom_http_response-header.pp so that it configures a brand new Ubuntu machine to the requirements asked in this task
+
+</details>
 
 ## Author
 

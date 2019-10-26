@@ -14,6 +14,9 @@ Let’s practice by exploring the infrastructure side (network, servers, securit
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### [0. What happens when...](./0-blog_post)
 
 - This question is a classic and still widely used interview question for many types of software engineering position. It is used to assess a candidate’s general knowledge of how the web stack works on top of the internet. One important guideline to begin answering this question is that you should ask your interviewer whether they would like you to focus in on one specific area of the workflow. For a front-end position they may want you to talk at length about how the DOM is rendering. For an SRE position they may want you to go into the load balancing mechanism.
@@ -46,6 +49,8 @@ Let’s practice by exploring the infrastructure side (network, servers, securit
 - Folks on the Internet have been trying to put together a comprehensive answer to the question. Help them by submitting a pull request. Paste the link in your answer file.
   - The pull request must bring meaningful value (not a typo correction or style improvement)
   - Share the pull request URL in your answer file and in the field below
+
+</details>
 
 ## Author
 

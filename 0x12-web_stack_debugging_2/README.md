@@ -7,6 +7,9 @@
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### [0. Run software as another user](./0-iamsomeonelese)
 
 - The user root is, on Linux, the “superuser”. It can do anything it wants, that’s a good and bad thing. A good practice is that one should never be logged in the root user, as if you fat finger a command and for example run rm -rf /, there is no comeback. That’s why it is preferable to run as a privileged user, meaning that the user also has the ability to perform tasks that the root user can do, just need to use a specific command that you need to discover.
@@ -16,7 +19,7 @@
   - the script should run the whoami command under the user passed as an argument
   - make sure to try your script by passing different users
 
-```sh
+```
 root@ubuntu:~# whoami
 root
 root@ubuntu:~# ./0-iamsomeonelese nginx
@@ -34,7 +37,7 @@ root
   - You cannot use apt-get remove
   - Write a Bash script that configures the container to fit the above requirements
 
-```sh
+```
 root@ab6f4542747e:~# ps auxff | grep ngin[x]
 nginx      884  0.0  0.0  77360  2744 ?        Ss   19:16   0:00 nginx: master process /usr/sbin/nginx
 nginx      885  0.0  0.0  77712  2772 ?        S    19:16   0:00  \_ nginx: worker process
@@ -56,6 +59,8 @@ root@ab6f4542747e:~# nc -z 0 8080 ; echo $?
   - You cannot use &&
   - You cannot use wget
   - You cannot execute your previous answer file (Do not include the name of the previous script in this one)
+
+</details>
 
 ## Author
 

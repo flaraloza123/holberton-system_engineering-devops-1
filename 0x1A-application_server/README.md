@@ -2,6 +2,9 @@
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### [0. Set up development with Python](./README.md)
 
 - Let’s serve what you built for AirBnB clone v2 - Web framework on web-01. This task is an exercise in setting up your development environment, which is used for testing and debugging your code before deploying it to production.
@@ -10,7 +13,8 @@
   - Your Flask application object must be named app (This will allow us to run and check your code).
 
 Window 1
-```sh
+
+```
 ubuntu@229-web-01:~/AirBnB_clone_v2$ python3 -m web_flask.0-hello_route
  * Serving Flask app "0-hello_route" (lazy loading)
  * Environment: production
@@ -22,7 +26,8 @@ ubuntu@229-web-01:~/AirBnB_clone_v2$ python3 -m web_flask.0-hello_route
 ```
 
 Window 2
-```sh
+
+```
 ubuntu@229-web-01:~/AirBnB_clone_v2$ curl 127.0.0.1:5000/airbnb-onepage/
 Hello HBNB!ubuntu@229-web-01:~/AirBnB_clone_v2$
 ```
@@ -36,7 +41,8 @@ Hello HBNB!ubuntu@229-web-01:~/AirBnB_clone_v2$
   - In order to check your code, the checker will bind a Gunicorn instance to port 6000, so make sure nothing is listening on that port.
 
 Window 1
-```sh
+
+```
 ubuntu@229-web-01:~/AirBnB_clone_v2$ gunicorn --bind 0.0.0.0:5000 web_flask.0-hello_route:app
 [2019-05-06 20:43:57 +0000] [14026] [INFO] Starting gunicorn 19.9.0
 [2019-05-06 20:43:57 +0000] [14026] [INFO] Listening at: http://0.0.0.0:5000 (14026)
@@ -45,7 +51,8 @@ ubuntu@229-web-01:~/AirBnB_clone_v2$ gunicorn --bind 0.0.0.0:5000 web_flask.0-he
 ```
 
 Window 2
-```sh
+
+```
 ubuntu@229-web-01:~$ curl 127.0.0.1:5000/airbnb-onepage/
 Hello HBNB!ubuntu@229-web-01:~$
 ```
@@ -61,7 +68,8 @@ Hello HBNB!ubuntu@229-web-01:~$
   - In an actual production environment the application server will be configured to start upon startup in a system initialization script. This will be covered in the advanced tasks.
 
 Window 1
-```sh
+
+```
 ubuntu@229-web-01:~/AirBnB_clone_v2$ gunicorn --bind 0.0.0.0:5000 web_flask.0-hello_route:app
 [2019-05-06 20:43:57 +0000] [14026] [INFO] Starting gunicorn 19.9.0
 [2019-05-06 20:43:57 +0000] [14026] [INFO] Listening at: http://0.0.0.0:5000 (14026)
@@ -70,13 +78,15 @@ ubuntu@229-web-01:~/AirBnB_clone_v2$ gunicorn --bind 0.0.0.0:5000 web_flask.0-he
 ```
 
 Window 2
-```sh
+
+```
 ubuntu@229-web-01:~/AirBnB_clone_v2$ curl 127.0.0.1/airbnb-onepage/
 Hello HBNB!ubuntu@229-web-01:~/AirBnB_clone_v2$
 ```
 
 Local
-```sh
+
+```
 vagrant@ubuntu-xenial:~$ curl -sI 35.231.193.217/airbnb-onepage/
 HTTP/1.1 200 OK
 Server: nginx/1.10.3 (Ubuntu)
@@ -97,7 +107,8 @@ vagrant@ubuntu-xenial:~$ curl 35.231.193.217/airbnb-onepage/
   - Include your Nginx config file as 3-app_server-nginx_config.
 
 Terminal 1
-```sh
+
+```
 ubuntu@229-web-01:~/AirBnB_clone_v2$ tmux new-session -d 'gunicorn --bind 0.0.0.0:5000 web_flask.0-hello_route:app'
 ubuntu@229-web-01:~/AirBnB_clone_v2$ pgrep gunicorn
 1661
@@ -114,54 +125,69 @@ Hello HBNB!ubuntu@229-web-01:~/AirBnB_clone_v2$
 
 ubuntu@229-web-01:~/AirBnB_clone_v2$ curl 127.0.0.1:5001/number_odd_or_even/6
 ```
+
 ```html
 <!DOCTYPE html>
-<HTML lang="en">
-  <HEAD>
-    <TITLE>HBNB</TITLE>
-  </HEAD>
-  <BODY><H1>Number: 6 is even</H1></BODY>
-</HTML>
+<html lang="en">
+  <head>
+    <title>HBNB</title>
+  </head>
+  <body>
+    <h1>Number: 6 is even</h1>
+  </body>
+</html>
 ```
-```sh
+
+```
 ubuntu@229-web-01:~/AirBnB_clone_v2
-ubuntu@229-web-01:~$ 
+ubuntu@229-web-01:~$
 ubuntu@229-web-01:~/AirBnB_clone_v2$ curl 127.0.0.1/airbnb-dynamic/number_odd_or_even/5
 ```
+
 ```html
 <!DOCTYPE html>
-<HTML lang="en">
-  <HEAD>
-    <TITLE>HBNB</TITLE>
-  </HEAD>
-  <BODY><H1>Number: 5 is odd</H1></BODY>
+<html lang="en">
+  <head>
+    <title>HBNB</title>
+  </head>
+  <body>
+    <h1>Number: 5 is odd</h1>
+  </body>
+</html>
 ```
 
 Local
-```sh
+
+```
 vagrant@ubuntu-xenial:~$ curl 35.231.193.217/airbnb-dynamic/number_odd_or_even/6
 ```
+
 ```html
 <!DOCTYPE html>
-<HTML lang="en">
-  <HEAD>
-    <TITLE>HBNB</TITLE>
-  </HEAD>
-  <BODY><H1>Number: 6 is even</H1></BODY>
+<html lang="en">
+  <head>
+    <title>HBNB</title>
+  </head>
+  <body>
+    <h1>Number: 6 is even</h1>
+  </body>
+</html>
 ```
 
 ### [4. Let's do this for your API](./4-app_server-nginx_config)
 
 - Let’s serve what you built for AirBnB clone v3 - RESTful API on web-01.
+
   - Git clone your AirBnB_clone_v3
   - Setup Nginx so that the route /api/ points to a Gunicorn instance listening on port 5002
   - Nginx must serve this page both locally and on its public IP on port 80
   - To test your setup you should bind Gunicorn to api/v1/app.py
   - It may be helpful to import your data (and environment variables) from this project
   - Upload your Nginx config file as 4-app_server-nginx_config
-  
+
 Terminal 1
-```sh
+
+```
 ubuntu@229-web-01:~/AirBnB_clone_v3$ tmux new-session -d 'gunicorn --bind 0.0.0.0:5002 api.v1.app:app'
 ubuntu@229-web-01:~/AirBnB_clone_v3$ curl 127.0.0.1:5002/api/v1/states
 [{"__class__":"State","created_at":"2019-05-10T00:39:27.032802","id":"7512f664-4951-4231-8de9-b18d940cc912","name":"California","updated_at":"2019-05-10T00:39:27.032965"},{"__class__":"State","created_at":"2019-05-10T00:39:36.021219","id":"b25625c8-8a7a-4c1f-8afc-257bf9f76bc8","name":"Arizona","updated_at":"2019-05-10T00:39:36.021281"}]
@@ -171,7 +197,8 @@ ubuntu@229-web-01:~/AirBnB_clone_v3$ curl 127.0.0.1/api/v1/states
 ```
 
 Local
-```sh
+
+```
 vagrant@ubuntu-xenial:~$ curl 35.231.193.217/api/v1/states
 [{"__class__":"State","created_at":"2019-05-10T00:39:27.032802","id":"7512f664-4951-4231-8de9-b18d940cc912","name":"California","updated_at":"2019-05-10T00:39:27.032965"},{"__class__":"State","created_at":"2019-05-10T00:39:36.021219","id":"b25625c8-8a7a-4c1f-8afc-257bf9f76bc8","name":"Arizona","updated_at":"2019-05-10T00:39:36.021281"}]
 ```
@@ -201,9 +228,11 @@ vagrant@ubuntu-xenial:~$ curl 35.231.193.217/api/v1/states
   - Upload gunicorn.service to Github
 
 ### [7. No service interruption](./4-reload_gunicorn_no_downtime)
-- One of the most important metrics for any Internet-based business is its uptime. It is the percentage of the time over a given period that the service/product is accessible to customers. Let’s pick the example of Amazon.com, for every minute of downtime (which is the opposite of uptime), it costs the company $2M. Yet, application servers often need to restart to update with the new version of the code or new configuration, when doing this operation, an application server cannot serve traffic, which meant downtime.
+
+- One of the most important metrics for any Internet-based business is its uptime. It is the percentage of the time over a given period that the service/product is accessible to customers. Let’s pick the example of Amazon.com, for every minute of downtime (which is the opposite of uptime), it costs the company \$2M. Yet, application servers often need to restart to update with the new version of the code or new configuration, when doing this operation, an application server cannot serve traffic, which meant downtime.
 
 - To avoid this; application servers are designed with a master/workers infrastructure. The master is in charge of:
+
   - Receiving requests
   - Managing workers (starting, stopping)
   - Distributing requests to workers
@@ -213,7 +242,7 @@ vagrant@ubuntu-xenial:~$ curl 35.231.193.217/api/v1/states
 
 - Write a simple Bash script to reload Gunicorn in a graceful way.
 
-```sh
+```
 sylvain@ubuntu$ ps auxf | grep gunicorn
 vagrant   9376  2.2  3.6  58068 18320 pts/3    S+   19:25   0:00  |   \_ /home/vagrant/AirBnB_clone_v4/bin/python3 /home/vagrant/AirBnB_clone_v4/bin/gunicorn --bind 0.0.0.0:8001 --workers 4 web_flask.0-hello_route:app
 vagrant   9379  2.6  4.6  82800 23116 pts/3    S+   19:25   0:00  |       \_ /home/vagrant/AirBnB_clone_v4/bin/python3 /home/vagrant/AirBnB_clone_v4/bin/gunicorn --bind 0.0.0.0:8001 --workers 4 web_flask.0-hello_route:app
@@ -230,6 +259,8 @@ vagrant   9395  6.0  4.6  82840 23180 pts/3    S+   19:25   0:00  |       \_ /ho
 vagrant   9396  7.0  4.6  82844 23188 pts/3    S+   19:25   0:00  |       \_ /home/vagrant/AirBnB_clone_v4/bin/python3 /home/vagrant/AirBnB_clone_v4/bin/gunicorn --bind 0.0.0.0:8001 --workers 4 web_flask.0-hello_route:app
 vagrant   9402  0.0  0.1  10460   936 pts/2    S+   19:25   0:00      \_ grep --color=auto gunicorn
 ```
+
+</details>
 
 ## Author
 

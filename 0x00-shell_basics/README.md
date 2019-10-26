@@ -70,11 +70,14 @@ LTS
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### [0. Where am I?](./0-current_working_directory)
 
 - Write a script that prints the absolute path name of the current working directory.
 
-```sh
+```
 $ ./0-current_working_directory
 /Users/holbertonschool/holbertonschool-sysadmin_devops/0x00-shell_basics
 ```
@@ -83,7 +86,7 @@ $ ./0-current_working_directory
 
 - Display the contents list of your current directory.
 
-```sh
+```
 $ ./1-listit
 Applications    Documents   Dropbox Movies Pictures
 Desktop Downloads   Library Music Public
@@ -94,7 +97,7 @@ Desktop Downloads   Library Music Public
 - Write a script that changes the working directory to the user’s home directory.
   - You are not allowed to use any shell variables
 
-```sh
+```
 julien@ubuntu:/tmp$ pwd
 /tmp
 julien@ubuntu:/tmp$ echo $HOME
@@ -108,7 +111,7 @@ julien@ubuntu:~$ pwd
 
 - Display current directory contents in a long format
 
-```sh
+```
 $ ./3-listfiles
 total 32
 -rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:19 0-current_working_directory
@@ -121,7 +124,7 @@ total 32
 
 - Display current directory contents, including hidden files (starting with .). Use the long format.
 
-```sh
+```
 $ ./4-listmorefiles
 total 32
 drwxr-xr-x@ 6 sylvain staff 204 Jan 25 00:29 .
@@ -140,7 +143,7 @@ drwxr-xr-x@ 43 sylvain staff 1462 Jan 25 00:19 ..
   - with user and group IDs displayed numerically
   - And hidden files (starting with .)
 
-```sh
+```
 $ ./5-listfilesdigitonly
 total 32
 drwxr-xr-x@ 6 501 20 204 Jan 25 00:29 .
@@ -157,7 +160,7 @@ drwxr-xr-x@ 43 501 20 1462 Jan 25 00:19 ..
 
 - Create a script that creates a directory named holberton in the /tmp/ directory.
 
-```sh
+```
 $ ./6-firstdirectory
 $ file /tmp/holberton/
 /tmp/holberton/: directory
@@ -167,7 +170,7 @@ $ file /tmp/holberton/
 
 - Move the file betty from /tmp/ to /tmp/holberton.
 
-```sh
+```
 $ ./7-movethatfile
 $ ls /tmp/holberton/
 betty
@@ -178,7 +181,7 @@ betty
 - Delete the file betty.
   - The file betty is in /tmp/holberton
 
-```sh
+```
 $ ./8-firstdelete
 $ ls /tmp/holberton/
 ```
@@ -187,7 +190,7 @@ $ ls /tmp/holberton/
 
 - Delete the directory holberton that is in the /tmp directory.
 
-```sh
+```
 $ ./9-firstdirdeletion
 $ file /tmp/holberton
 /tmp/holberton: cannot open `/tmp/holberton' (No such file or directory)
@@ -197,7 +200,7 @@ $ file /tmp/holberton
 
 - Write a script that changes the working directory to the previous one.
 
-```sh
+```
 julien@ubuntu:/tmp$ pwd
 /tmp
 julien@ubuntu:/tmp$ cd /var
@@ -216,7 +219,7 @@ julien@ubuntu:/tmp$ pwd
 
 - Write a script that prints the type of the file named iamafile. The file iamafile will be in the /tmp directory when we will run your script.
 
-```sh
+```
 ubuntu@ip-172-31-63-244:~$ ./12-file_type
 /tmp/iamafile: ELF 64-bit LSB  executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.24, BuildID[sha1]=bd39c07194a778ccc066fc963ca152bdfaa3f971, stripped
 ```
@@ -225,7 +228,7 @@ ubuntu@ip-172-31-63-244:~$ ./12-file_type
 
 - Create a symbolic link to /bin/ls, named **ls**. The symbolic link should be created in the current working directory.
 
-```sh
+```
 ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
 total 144
 drwxrwxr-x  2 ubuntu ubuntu   4096 Sep 20 03:24 .
@@ -246,7 +249,7 @@ lrwxrwxrwx  1 ubuntu ubuntu      7 Sep 20 03:24 __ls__ -> /bin/ls
 
 - Create a script that moves all files beginning with an uppercase letter to the directory /tmp/u.
 
-```sh
+```
 ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
 total 148
 drwxrwxr-x  3 ubuntu ubuntu   4096 Sep 20 03:33 .
@@ -278,7 +281,7 @@ drwxrwxr-x 3 ubuntu ubuntu 4096 Sep 20 03:33 ..
 
 - Create a script that deletes all files in the current working directory that end with the character ~.
 
-```sh
+```
 ubuntu@ip-172-31-63-244:/tmp/sym$ ls
 main.c  main.c~  Makefile~
 ubuntu@ip-172-31-63-244:/tmp/sym$ ./16-clean_emacs
@@ -292,7 +295,7 @@ ubuntu@ip-172-31-63-244:/tmp/emacs$
 - Create a script that creates the directories welcome/, welcome/to/ and welcome/to/holberton in the current directory.
   - You are only allowed to use two spaces in your script, not more.
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ls -l
 total 4
 -rwxrw-r-- 1 julien julien 44 Sep 20 12:09 17-tree
@@ -322,7 +325,7 @@ drwxrwxr-x 2 julien julien 4096 Sep 20 12:11 holberton
   - You can assume that all the files we will test with will have at least one letter or one digit
   - The listing should end with a new line
 
-```sh
+```
 ubuntu@ip-172-31-63-244:~/holbertonschool$ ls -a
 .  ..  0-commas  0-commas-checks  1-empty_casks  2-gifs  3-directories  4-zeros  5-rot13  6-odd  7-sort_rot13  Makefile  quote  .test  test_dir  test.var
 ubuntu@ip-172-31-63-244:~/holbertonschool$ ./18-commas
@@ -333,7 +336,7 @@ ubuntu@ip-172-31-63-244:~/holbertonschool$ ./18-commas
 
 - Create a magic file holberton.mgc that can be used with the command file to detect Holberton data files. Holberton data files always contain the string HOLBERTON at offset 0.
 
-```sh
+```
 ubuntu@ip-172-31-63-244:/tmp/magic$ cp /bin/ls .
 ubuntu@ip-172-31-63-244:/tmp/magic$ ls -la
 total 268
@@ -354,6 +357,8 @@ ls:                    data
 thisisanholbertonfile: Holberton data
 thisisatextfile:       ASCII text
 ```
+
+</details>
 
 ## Author
 

@@ -11,13 +11,16 @@ How to debug a NGINX server with bad ports
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### [0. Nginx likes port 80](./0-nginx_likes_port_80)
 
 - Using your debugging skills, find out what’s keeping your Ubuntu container’s Nginx installation from listening on port 80. Feel free to install whatever tool you need, start and destroy as many containers as you need to debug the issue. Then, write a Bash script with the minimum number of commands to automate your fix.
   - Nginx must be running, and listening on port 80 of all the server’s active IPv4 IPs
   - Write a Bash script that configures a server to the above requirements
 
-```sh
+```
 root@966c5664b21f:/# curl 0:80
 curl: (7) Failed to connect to 0 port 80: Connection refused
 root@966c5664b21f:/# curl 0:80
@@ -67,7 +70,7 @@ root@966c5664b21f:/# curl 0:80
   - You cannot execute your previous answer file (Do not include the name of the previous script in this one)
   - service (init) must say that nginx is not running ← for real
 
-```sh
+```
 root@966c5664b21f:/# curl 0:80
 curl: (7) Failed to connect to 0 port 80: Connection refused
 root@966c5664b21f:/#
@@ -109,11 +112,13 @@ root@966c5664b21f:/# curl 0:80
 </html>
 ```
 
-```sh
+```
 root@966c5664b21f:/#
 root@966c5664b21f:/# service nginx status
  * nginx is not running
 ```
+
+</details>
 
 ## Author
 

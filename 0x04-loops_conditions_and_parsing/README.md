@@ -18,11 +18,14 @@ General
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### [0. Create a SSH RSA key pair](./0-RSA_public_key.pub)
 
 - Create a RSA key pair.
 
-```sh
+```
 ssh-keygen -t rsa
 ```
 
@@ -30,7 +33,7 @@ ssh-keygen -t rsa
 
 - Write a Bash script that displays Holberton School 10 times.
 
-```sh
+```
 sylvain@ubuntu$ head -n 2 1-for_holberton_school
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
@@ -51,7 +54,7 @@ Holberton School
 
 - Write a Bash script that displays Holberton School 10 times.
 
-```sh
+```
 sylvain@ubuntu$ ./2-while_holberton_school
 Holberton School
 Holberton School
@@ -69,7 +72,7 @@ Holberton School
 
 - Write a Bash script that displays Holberton School 10 times.
 
-```sh
+```
 sylvain@ubuntu$ ./3-until_holberton_school
 Holberton School
 Holberton School
@@ -88,7 +91,7 @@ Holberton School
 - Write a Bash script that displays Holberton School 10 times, but for the 9th iteration, displays Holberton School and then Hi on a new line.
   - You must use the if statement
 
-```sh
+```
 sylvain@ubuntu$ ./4-if_9_say_hi
 Holberton School
 Holberton School
@@ -112,7 +115,7 @@ Holberton School
   - You must use the while loop (for and until are forbidden)
   - You must use the if, elif and else statements
 
-```sh
+```
 sylvain@ubuntu$ ./5-4_bad_luck_8_is_your_chance
 Holberton School
 Holberton School
@@ -134,7 +137,7 @@ Holberton School
   - displays 17 and then bad luck from Italy for the 17th loop iteration
   - You must use the case statement
 
-```sh
+```
 sylvain@ubuntu$ ./6-superstitious_numbers
 1
 2
@@ -167,7 +170,7 @@ bad luck from Italy
   - display hours from 0 to 12
   - display minutes from 1 to 59
 
-```sh
+```
 sylvain@ubuntu$ ./7-clock | head -n 70
 Hour: 0
 1
@@ -250,7 +253,7 @@ Hour: 1
   - You must use the for loop (while and until are forbidden)
   - Do not display hidden files
 
-```sh
+```
 sylvain@ubuntu$ ls
 100-read_and_cut              1-for_holberton_school         6-superstitious_numbers
 101-tell_the_story_of_passwd  2-while_holberton_school       7-clock
@@ -287,7 +290,7 @@ to_file_or_not_to_file
     - if the file is a regular file: holbertonschool is a regular file
     - if the file is not a regular file: (nothing)
 
-```sh
+```
 sylvain@ubuntu$ file holbertonschool
 holbertonschool: cannot open `holbertonschool' (No such file or directory)
 sylvain@ubuntu$ ./9-to_file_or_not_to_file
@@ -317,7 +320,7 @@ holbertonschool file is not empty
   - Displays Buzz when the number is a multiple of 5
   - Otherwise, displays the number in a list format
 
-```sh
+```
 sylvain@ubuntu$ ./10-fizzbuzz | head -20
 1
 2
@@ -349,7 +352,7 @@ Buzz
     - user id
     - Home directory path for the user
 
-```sh
+```
 sylvain@ubuntu$ cat /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
@@ -418,7 +421,7 @@ ubuntu:1001:/home/ubuntu
 
 - Write a Bash script that displays the content of the file /etc/passwd, using the while loop + IFS.
 
-```sh
+```
 sylvain@ubuntu$ ./101-tell_the_story_of_passwd
 The user root is part of the 0 gang, lives in /root and rides /bin/bash. 0's place is protected by the passcode x, more info about the user here: root
 The user daemon is part of the 1 gang, lives in /usr/sbin and rides /usr/sbin/nologin. 1's place is protected by the passcode x, more info about the user here: daemon
@@ -455,7 +458,7 @@ The user ubuntu is part of the 1001 gang, lives in /home/ubuntu and rides /bin/b
 
 - Write a Bash script that displays the visitor IP along with the HTTP status code from the Apache log file.
 
-```sh
+```
 sylvain@ubuntu$ ./102-lets_parse_apache_logs | tail -n 10
 185.130.5.207 301
 185.130.5.207 301
@@ -473,7 +476,7 @@ sylvain@ubuntu$ ./102-lets_parse_apache_logs | tail -n 10
 
 - Write a Bash script that groups visitors by IP and HTTP status code, and displays this data.
 
-```sh
+```
 sylvain@ubuntu$ ./103-dig_the-data | head -n 10
     141 130.0.236.153 200
     140 62.210.250.66 200
@@ -486,6 +489,8 @@ sylvain@ubuntu$ ./103-dig_the-data | head -n 10
     36 2.1.201.36 304
     36 195.154.172.53 200
 ```
+
+</details>
 
 ## Author
 

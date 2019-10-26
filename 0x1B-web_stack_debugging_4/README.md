@@ -2,6 +2,9 @@
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### [0. Sky is the limit, let's bring that limit higher](./0-the_sky_is_the_limit_not.pp)
 
 - In this web stack debugging task, we are testing how well our web server setup featuring Nginx is doing under pressure and it turns out it’s not doing well: we are getting a huge amount of failed requests.
@@ -125,7 +128,7 @@ Percentage of the requests served within a certain time (ms)
   98%     27
   99%     28
  100%     31 (longest request)
- ```
+```
 
 ### [1. User limit](./1-user_limit.pp)
 
@@ -173,6 +176,8 @@ lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
 mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
 news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
 ```
+
+</details>
 
 ## Author
 

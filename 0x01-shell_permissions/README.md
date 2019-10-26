@@ -26,11 +26,14 @@ Other Man Pages
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### [0. My name is Betty](./0-iam_betty)
 
 - Create a script that changes your user ID to betty.
 
-```sh
+```
 julien@ubuntu:/tmp/h$ tail -1 0-iam_betty | wc -c
 9
 ```
@@ -39,7 +42,7 @@ julien@ubuntu:/tmp/h$ tail -1 0-iam_betty | wc -c
 
 - Write a script that prints the effective userid of the current user.
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ./1-who_am_i
 julien
 ```
@@ -48,7 +51,7 @@ julien
 
 - Write a script that prints all the groups the current user is part of.
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ./2-groups
 julien adm cdrom sudo dip plugdev lpadmin sambashare
 ```
@@ -57,7 +60,7 @@ julien adm cdrom sudo dip plugdev lpadmin sambashare
 
 - Write a script that changes the owner of the file hello to the user betty.
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ls -l
 total 4
 -rwxrw-r-- 1 julien julien 30 Sep 20 14:23 3-new_owner
@@ -78,7 +81,7 @@ total 4
 - Write a script that adds execute permission to the owner of the file hello.
   - The file hello will be in the working directory
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ls -l
 total 8
 -rwxrw-r-- 1 julien julien 28 Sep 20 14:26 5-execute
@@ -97,7 +100,7 @@ total 8
 - Write a script that adds execute permission to the owner and the group owner, and read permission to other users, to the file hello.
   - The file hello will be in the working directory
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ls -l
 total 8
 -rwxrw-r-- 1 julien julien 36 Sep 20 14:31 6-multiple_permissions
@@ -115,7 +118,7 @@ total 8
   - The file hello will be in the working directory
   - You are not allowed to use commas for this script
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ls -l
 total 8
 -rwxrw-r-- 1 julien julien 28 Sep 20 14:35 7-everybody
@@ -135,7 +138,7 @@ total 8
   - Other users: all the permissions
 - Write a script that sets the mode of the file hello to this:
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ls -l
 total 8
 -rwxrw-r-- 1 julien julien 28 Sep 20 14:40 8-James_Bond
@@ -151,7 +154,7 @@ total 8
 
 - Write a script that sets the mode of the file hello to this:
 
-```sh
+```
 -rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello
 ```
 
@@ -164,7 +167,7 @@ total 8
   - The file hello will be in the working directory
   - The file olleh will be in the working directory
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ls -l
 total 8
 -rwxrw-r-- 1 julien julien 42 Sep 20 14:45 10-mirror_permissions
@@ -182,7 +185,7 @@ total 8
 
 - Create a script that adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users. Regular files should not be changed.
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ls -l
 total 20
 -rwxrwxr-x 1 julien julien   24 Sep 20 14:53 11-directories_permissions
@@ -204,7 +207,7 @@ drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir2
 
 - Create a script that creates a directory called dir_holberton with permissions 751 in the working directory.
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ls -l
 total 20
 -rwxrwxr-x 1 julien julien   39 Sep 20 14:59 12-directory_permissions
@@ -228,7 +231,7 @@ drwxr-x--x 2 julien julien 4096 Sep 20 14:59 dir_holberton
 - Write a script that changes the group owner to holberton for the file hello
   - The file hello will be in the working directory
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ls -l
 total 24
 -rwxrwxr-x 1 julien julien   34 Sep 20 15:03 13-change_group
@@ -252,7 +255,7 @@ drwxr-x--x 2 julien julien    4096 Sep 20 14:59 dir_holberton
 
 - Write a script that changes the owner to betty and the group owner to holberton for all the files and directories in the working directory.
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ls -l
 total 24
 -rwxrwxr-x 1 julien julien   36 Sep 20 15:06 14-change_owner_and_group
@@ -278,7 +281,7 @@ drwxr-x--x 2 betty holberton 4096 Sep 20 14:59 dir_holberton
   - The file \_hello is in the working directory
   - The file \_hello is a symbolic link
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ls -l
 total 24
 -rwxrwxr-x 1 julien julien   44 Sep 20 15:12 15-symbolic_link_permissions
@@ -297,7 +300,7 @@ lrwxrwxrwx 1 betty  holberton    5 Sep 20 15:10 _hello -> hello
 - Write a script that changes the owner of the file hello to betty only if it is owned by the user guillaume.
   - The file hello will be in the working directory
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ls -l
 total 24
 -rwxrwxr-x 1 julien    julien      47 Sep 20 15:18 16-if_only
@@ -317,11 +320,13 @@ total 24
 
 - Create a man page that looks exactly like this one and passes all checks.
 
-```sh
+```
 ubuntu@ip-172-31-63-244:/tmp/man$ wc 101-man_holberton
  16  89 608 101-man_holberton
 ubuntu@ip-172-31-63-244:/tmp/man$ man ./101-man_holberton
 ```
+
+</details>
 
 ## Author
 

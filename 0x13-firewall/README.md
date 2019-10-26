@@ -4,6 +4,9 @@
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### [0. Firewall ABC](./0-firewall_ABC)
 
 Pick one answer for every question.
@@ -42,7 +45,7 @@ Let’s install the ufw firewall and setup a few rules on web-01.
   - Configure web-01 so that its firewall redirects port 8080/TCP to port 80/TCP.
   - Your answer file should be a copy of the ufw configuration file that you modified to make this happen
 
-```sh
+```
 root@03-web-01:~# netstat -lpn
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
@@ -72,7 +75,7 @@ root@03-web-01:~# grep listen /etc/nginx/sites-enabled/default
 My web server nginx is only listening on port 80
 netstat shows that nothing is listening on 8080
 
-```sh
+```
 ubuntu@03-web-02:~$ curl -sI web-01.holberton.online:80
 HTTP/1.1 200 OK
 Server: nginx/1.4.6 (Ubuntu)
@@ -95,6 +98,8 @@ Connection: keep-alive
 ETag: "5315bd25-264"
 Accept-Ranges: bytes
 ```
+
+</details>
 
 ## Author
 

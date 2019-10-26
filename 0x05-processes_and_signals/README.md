@@ -18,11 +18,14 @@ General
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### [0. What is my PID](./0-what-is-my-pid)
 
 - Write a Bash script that displays its own PID.
 
-```sh
+```
 sylvain@ubuntu$ ./0-what-is-my-pid
 4120
 ```
@@ -34,7 +37,7 @@ sylvain@ubuntu$ ./0-what-is-my-pid
   - Display in a user-oriented format
   - Show process hierarchy
 
-```sh
+```
 sylvain@ubuntu$ ./1-list_your_processes | head -50
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 root         2  0.0  0.0      0     0 ?        S    Feb13   0:00 [kthreadd]
@@ -106,7 +109,7 @@ sylvain   4479  0.0  0.1  10460   912 pts/0    S+   03:40   0:00                
 - Write a Bash script that displays the PID, along with the process name, of processes whose name contain the word bash.
   - You cannot use ps
 
-```sh
+```
 sylvain@ubuntu$ ./3-show_your_bash_pid_made_easy
 4404 bash
 4555 bash
@@ -119,7 +122,7 @@ sylvain@ubuntu$ ./3-show_your_bash_pid_made_easy
 
 - Write a Bash script that displays To infinity and beyond indefinitely.
 
-```sh
+```
 To infinity and beyond
 To infinity and beyond
 To infinity and beyond
@@ -134,7 +137,7 @@ To infinity and beyond
 - Write a Bash script that kills 4-to_infinity_and_beyond process.
   - You must use kill
 
-```sh
+```
 sylvain@ubuntu$ ./4-to_infinity_and_beyond
 To infinity and beyond
 To infinity and beyond
@@ -160,7 +163,7 @@ Terminated
 
 Terminal 0
 
-```sh
+```
 sylvain@ubuntu$ ./4-to_infinity_and_beyond
 To infinity and beyond
 To infinity and beyond
@@ -178,7 +181,7 @@ Terminated
 
 Terminal 1
 
-```sh
+```
 sylvain@ubuntu$ ./6-kill_me_now_made_easy
 ```
 
@@ -192,7 +195,7 @@ sylvain@ubuntu$ ./6-kill_me_now_made_easy
 
 Terminal 0
 
-```sh
+```
 sylvain@ubuntu$ ./7-highlander
 To infinity and beyond
 To infinity and beyond
@@ -209,7 +212,7 @@ To infinity and beyond
 
 Terminal 1
 
-```sh
+```
 sylvain@ubuntu$ ./67-kill_me_now_made_easy
 sylvain@ubuntu$ ./67-kill_me_now_made_easy
 sylvain@ubuntu$ ./67-kill_me_now_made_easy
@@ -223,7 +226,7 @@ sylvain@ubuntu$ ./67-kill_me_now_made_easy
 
 Terminal 0
 
-```sh
+```
 sylvain@ubuntu$ ./7-highlander
 To infinity and beyond
 To infinity and beyond
@@ -234,7 +237,7 @@ Killed
 
 Terminal 1
 
-```sh
+```
 sylvain@ubuntu$ ./8-beheaded_process
 ```
 
@@ -249,7 +252,7 @@ sylvain@ubuntu$ ./8-beheaded_process
   - Displays Y U no love me?! when receiving a SIGINT signal
   - Deletes the file /var/run/holbertonscript.pid and terminates itself when receiving a SIGQUIT or SIGTERM signal
 
-```sh
+```
 sylvain@ubuntu$ sudo ./100-process_and_pid_file
 To infinity and beyond
 To infinity and beyond
@@ -258,7 +261,7 @@ To infinity and beyond
 
 Executing the 100-process_and_pid_file script and killing it with ctrl+c.
 
-```sh
+```
 sylvain@ubuntu$ sudo ./100-process_and_pid_file
 To infinity and beyond
 To infinity and beyond
@@ -276,7 +279,7 @@ I hate the kill command
 
 Terminal 1
 
-```sh
+```
 sylvain@ubuntu$ sudo pkill -f 100-process_and_pid_file
 ```
 
@@ -305,7 +308,7 @@ Starting 100-process_and_pid_file in the terminal #0 and then killing it in the 
     - Displays manage_my_process restarted
   - Displays Requirements: manage_my_process {start|stop|restart} if any other argument or no argument is passed
 
-```sh
+```
 sylvain@ubuntu$ sudo ./101-manage_my_process
 Requirements: manage_my_process {start|stop|restart}
 sylvain@ubuntu$ sudo ./101-manage_my_process start
@@ -357,7 +360,7 @@ int infinite_while(void)
 
 Terminal #0
 
-```sh
+```
 sylvain@ubuntu$ gcc 102-zombie.c -o zombie
 sylvain@ubuntu$ ./zombie
 Zombie process created, PID: 13527
@@ -370,7 +373,7 @@ Zombie process created, PID: 13531
 
 Terminal 1
 
-```sh
+```
 sylvain@ubuntu$ ps aux | grep -e 'Z+.*<defunct>'
 sylvain  13527  0.0  0.0      0     0 pts/0    Z+   01:19   0:00 [zombie] <defunct>
 sylvain  13528  0.0  0.0      0     0 pts/0    Z+   01:19   0:00 [zombie] <defunct>
@@ -389,6 +392,8 @@ In Terminal #0, I start by compiling 102-zombie.c and executing zombie which cre
   - Two minutes of above
   - Done in English
   - Published to Youtube
+
+</details>
 
 ## Author
 

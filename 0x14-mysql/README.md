@@ -15,6 +15,9 @@
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### 0. Install MySQL
 
 - First things first, let’s get MySQL installed on both your web-01 and web-02 servers.
@@ -22,7 +25,7 @@
   - Make sure that task #3 of your SSH project is completed for web-01 and web-02. The checker will connect to your servers to check MySQL status
   - Please make sure you have your README.md pushed to Github.
 
-```sh
+```
 ubuntu@229-web-01:~$ mysql --version
 mysql  Ver 14.14 Distrib 5.7.25, for Linux (x86_64) using  EditLine wrapper
 ```
@@ -34,7 +37,7 @@ mysql  Ver 14.14 Distrib 5.7.25, for Linux (x86_64) using  EditLine wrapper
   - Make sure that holberton_user has permission to check the primary/replica status of your databases.
   - In addition to that, make sure that task #3 of your SSH project is completed for web-01 and web-02. You will likely need to add the public key to web-02 as you only added it to web-01 for this project. The checker will connect to your servers to check MySQL status
 
-```sh
+```
 ubuntu@229-web-01:~$ mysql -uholberton_user -p -e "SHOW GRANTS FOR 'holberton_user'@'localhost'"
 Enter password:
 +-----------------------------------------------------------------+
@@ -51,7 +54,7 @@ Enter password:
   - Within the tyrell_corp database create a table named nexus6 and add at least one entry to it.
   - Make sure that holberton_user has SELECT permissions on your table so that we can check that the table exists and is not empty.
 
-```sh
+```
 ubuntu@229-web-01:~$ mysql -uholberton_user -p -e "use tyrell_corp; select * from nexus6"
 Enter password:
 +----+-------+
@@ -68,7 +71,7 @@ Enter password:
   - replica_user must have the appropriate permissions to replicate your primary MySQL server.
   - holberton_user will need SELECT privileges on the mysql.user table in order to check that replica_user was created with the correct permissions.
 
-```sh
+```
 ubuntu@229-web-01:~$ mysql -uholberton_user -p -e 'SELECT user, Repl_slave_priv FROM mysql.user'
 +------------------+-----------------+
 | user             | Repl_slave_priv |
@@ -98,7 +101,7 @@ ubuntu@229-web-01:~$ mysql -uholberton_user -p -e 'SELECT user, Repl_slave_priv 
 
 web01
 
-```sh
+```
 ubuntu@web-01:~$ mysql -uholberton_user -p
 Enter password:
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -126,7 +129,7 @@ mysql>
 
 web02
 
-```sh
+```
 root@web-02:/home/ubuntu# mysql -uholberton_user -p
 Enter password:
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -200,7 +203,7 @@ mysql>
   - The user to connect to the MySQL database must be root
   - The Bash script accepts one argument that is the password used to connect to the MySQL database
 
-```sh
+```
 ubuntu@03-web-01:~$ ls
 5-mysql_backup
 ubuntu@03-web-01:~$ ./5-mysql_backup mydummypassword
@@ -253,6 +256,8 @@ ubuntu@03-web-01:~$
 ubuntu@03-web-01:~$ file 01-03-2017.tar.gz
 01-03-2017.tar.gz: gzip compressed data, from Unix, last modified: Wed Mar  1 23:38:09 2017
 ```
+
+</details>
 
 ## Author
 

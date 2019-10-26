@@ -12,6 +12,9 @@ Learning Objectives
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### [0. How many subs?](./0-subs.py)
 
 - Write a function that queries the Reddit API and returns the number of subscribers (not active users, total subscribers) for a given subreddit. If an invalid subreddit is given, the function should return 0.
@@ -21,7 +24,7 @@ Learning Objectives
   - If not a valid subreddit, return 0.
   - NOTE: Invalid subreddits may return a redirect to search results. Ensure that you are not following redirects.
 
-```sh
+```
 wintermancer@lapbox ~/reddit_api/project $ cat 0-main.py
 ```
 
@@ -37,7 +40,7 @@ if __name__ == '__main__':
         print("{:d}".format(number_of_subscribers(sys.argv[1])))
 ```
 
-```sh
+```
 wintermancer@lapbox ~/reddit_api/project $ python3 0-main.py programming
 756024
 wintermancer@lapbox ~/reddit_api/project $ python3 0-main.py this_is_a_fake_subreddit
@@ -53,7 +56,7 @@ wintermancer@lapbox ~/reddit_api/project $ python3 0-main.py this_is_a_fake_subr
   - If not a valid subreddit, print None.
   - NOTE: Invalid subreddits may return a redirect to search results. Ensure that you are not following redirects.
 
-```sh
+```
 wintermancer@lapbox ~/reddit_api/project $ cat 1-main.py
 ```
 
@@ -69,7 +72,7 @@ if __name__ == '__main__':
         top_ten(sys.argv[1])
 ```
 
-```sh
+```
 wintermancer@lapbox ~/reddit_api/project $ python3 1-main.py programming
 Firebase founder's response to last week's "Firebase Costs increased by 7000%!"
 How a 64k intro is made
@@ -95,7 +98,7 @@ None
   - If not a valid subreddit, return None.
   - NOTE: Invalid subreddits may return a redirect to search results. Ensure that you are not following redirects.
 
-```sh
+```
 wintermancer@lapbox ~/reddit_api/project $ cat 2-main.py
 ```
 
@@ -114,7 +117,8 @@ if __name__ == '__main__':
         else:
             print("None")
 ```
-```sh
+
+```
 wintermancer@lapbox ~/reddit_api/project $ python3 2-main.py programming
 932
 wintermancer@lapbox ~/reddit_api/project $ python3 2-main.py this_is_a_fake_subreddit
@@ -133,7 +137,7 @@ None
   - If no posts match or the subreddit is invalid, print a newline.
   - NOTE: Invalid subreddits may return a redirect to search results. Ensure that you are NOT following redirects.
 
-```sh
+```
 wintermancer@lapbox ~/reddit_api/project $ cat 100-main.py
 ```
 
@@ -149,7 +153,8 @@ if __name__ == '__main__':
     else:
         result = count_words(sys.argv[1], [x for x in sys.argv[2].split()])
 ```
-```sh
+
+```
 wintermancer@lapbox ~/reddit_api/project $ python3 100-main.py programming 'python java javascript scala no_results_for_this_one'
 java: 27
 javascript: 20
@@ -158,6 +163,8 @@ scala: 4
 wintermancer@lapbox ~/reddit_api/project $ python3 100-main.py not_a_valid_subreddit 'python java javascript scala no_results_for_this_one'
 wintermancer@lapbox ~/reddit_api/project $ python3 100-main.py not_a_valid_subreddit 'python java'
 ```
+
+</details>
 
 ## Author
 

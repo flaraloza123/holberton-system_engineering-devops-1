@@ -47,13 +47,16 @@ Other help pages
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### [0. o](./0-alias)
 
 - Create a script that creates an alias.
   - Name: ls
   - Value: rm \*
 
-```sh
+```
 julien@ubuntu:/tmp/0x03$ ls
 0-alias  file1  file2
 julien@ubuntu:/tmp/0x03$ source ./0-alias
@@ -65,7 +68,7 @@ julien@ubuntu:/tmp/0x03$ \ls
 
 - Create a script that prints hello user, where user is the current Linux user.
 
-```sh
+```
 julien@ubuntu:/tmp/0x03$ id
 uid=1000(julien) gid=1000(julien) groups=1000(julien),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
 julien@ubuntu:/tmp/0x03$ ./1-hello_you
@@ -77,7 +80,7 @@ hello julien
 - Add /action to the PATH.
   /action should be the last directory the shell looks into when looking for a program.
 
-```sh
+```
 julien@ubuntu:/tmp/0x03$ echo $PATH
 /home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 julien@ubuntu:/tmp/0x03$ source ./2-path
@@ -89,7 +92,7 @@ julien@ubuntu:/tmp/0x03$ echo $PATH
 
 - Create a script that counts the number of directories in the PATH.
 
-```sh
+```
 julien@ubuntu:/tmp/0x03$ echo $PATH
 /home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 julien@ubuntu:/tmp/0x03$ . ./3-paths
@@ -103,7 +106,7 @@ julien@ubuntu:/tmp/0x03$ . ./3-paths
 
 - Create a script that lists environment variables.
 
-```sh
+```
 julien@ubuntu:/tmp/0x03$ source ./4-global_variables
 CC=gcc
 CDPATH=.:~:/usr/local:/usr:/
@@ -147,7 +150,7 @@ LOGNAME=franky
 
 - Create a script that lists all local variables and environment variables, and functions.
 
-```sh
+```
 julien@ubuntu:/tmp/0x03$ . ./5-local_variables
 BASH=/bin/bash
 BASHOPTS=checkwinsize:cmdhist:complete_fullquote:expand_aliases:extglob:extquote:force_fignore:histappend:interactive_comments:progcomp:promptvars:sourcepath
@@ -187,7 +190,7 @@ DESKTOP_SESSION=ubuntu
 
 - Write a script that prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE, followed by a new line.
 
-```sh
+```
 julien@production-503e7013:~$ export TRUEKNOWLEDGE=1209
 julien@production-503e7013:~$ ./8-true_knowledge | cat -e
 1337$
@@ -198,7 +201,7 @@ julien@production-503e7013:~$ ./8-true_knowledge | cat -e
 - Write a script that prints the result of POWER divided by DIVIDE, followed by a new line.
   - POWER and DIVIDE are environment variables
 
-```sh
+```
 julien@production-503e7013:~$ export POWER=42784
 julien@production-503e7013:~$ export DIVIDE=32
 julien@production-503e7013:~$ ./9-divide_and_rule | cat -e
@@ -211,7 +214,7 @@ julien@production-503e7013:~$ ./9-divide_and_rule | cat -e
   - BREATH and LOVE are environment variables
   - The script should display the result, followed by a new line
 
-```sh
+```
 julien@production-503e7013:~/$ export BREATH=4
 julien@production-503e7013:~/$ export LOVE=3
 julien@production-503e7013:~/$ ./10-love_exponent_breath
@@ -224,7 +227,7 @@ julien@production-503e7013:~/$ ./10-love_exponent_breath
   - The number in base 2 is stored in the environment variable BINARY
   - The script should display the number in base 10, followed by a new line
 
-```sh
+```
 julien@production-503e7013:~/$ export BINARY=10100111001
 julien@production-503e7013:~/$ ./11-binary_to_decimal
 1337
@@ -239,7 +242,7 @@ julien@production-503e7013:~/$ ./11-binary_to_decimal
   - Do not print oo
   - Your script file should contain maximum 64 characters
 
-```sh
+```
 julien@ubuntu:/tmp/0x03$ echo $((26 ** 2 -1))
 675
 julien@ubuntu:/tmp/0x03$ ./12-combinations | wc -l
@@ -263,7 +266,7 @@ os
 - Write a script that prints a number with two decimal places.
   - The number will be stored in the environment variable NUM.
 
-```sh
+```
 ubuntu@ip-172-31-63-244:~/0x03$ export NUM=0
 ubuntu@ip-172-31-63-244:~/0x03$ ./13-print_float
 0.00
@@ -281,7 +284,7 @@ ubuntu@ip-172-31-63-244:~/0x03$ ./13-print_float
   - The number in base 10 is stored in the environment variable DECIMAL
   - The script should display the number in base 16, followed by a new line
 
-```sh
+```
 julien@production-503e7013:~/$ export DECIMAL=16
 julien@production-503e7013:~/$ ./14-decimal_to_hexadecimal
 10
@@ -306,7 +309,7 @@ f$
 
 - Write a script that encodes and decodes text using the rot13 encryption. Assume ASCII.
 
-```sh
+```
 julien@production-503e7013:~/shell/fun_with_the_shell$ cat quote
 "Everyone is a proponent of strong encryption."
 - Dorothy E. Denning
@@ -319,7 +322,7 @@ julien@production-503e7013:~/shell/fun_with_the_shell$ ./100-rot13 < quote
 
 - Write a script that prints every other line from the input, starting with the first line.
 
-```sh
+```
 ubuntu@ip-172-31-63-244:/$ \ls -1
 bin
 boot
@@ -373,12 +376,14 @@ vmlinuz
   - STIR is in base stir.
   - The result should be in base behlnort
 
-```sh
+```
 julien@production-503e7013:~$ export WATER="ewwatratewa"
 julien@production-503e7013:~$ export STIR="ti.itirtrtr"
 julien@production-503e7013:~$ ./102-water_and_stir
 holberton
 ```
+
+</details>
 
 ## Author
 

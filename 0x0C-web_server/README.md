@@ -15,6 +15,9 @@
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### [0. Transfer a file to your server](./0-transfer_file)
 
 - Write a Bash script that transfers a file from our client to a server:
@@ -27,7 +30,7 @@
   - scp must transfer the file to the user home directory ~/
   - Strict host key checking must be disabled when using scp
 
-```sh
+```
 sylvain@ubuntu$ ./0-transfer_file
 Requirements: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY
 sylvain@ubuntu$
@@ -51,7 +54,7 @@ some_page.html
   - When querying Nginx at its root / with a GET request (requesting a page) using curl, it must return a page that contains the string Holberton School
   - As an answer file, write a Bash script that configures a new Ubuntu machine to respect above requirements
 
-```sh
+```
 sylvain@ubuntu$ curl 34.198.248.145/
 Holberton School for the win!
 sylvain@ubuntu$ curl -sI 34.198.248.145/
@@ -73,7 +76,7 @@ Accept-Ranges: bytes
   - Configure your DNS records with an A entry so that your root domain points to your web-01 IP address Warning: the propagation of your records can take time (~1-2 hours)
   - Go to your profile and enter your domain in the Project website url field
 
-```sh
+```
 sylvain@ubuntu$ cat 2-setup_a_domain_name
 holbertonschool.tech
 sylvain@ubuntu$
@@ -106,7 +109,7 @@ holbertonschool.tech.   7199    IN  A   184.72.193.201
   - You answer file should be a Bash script containing commands to automatically configure a Ubuntu machine to respect above requirements
   - Using what you did with 1-install_nginx_web_server, write 3-redirection so that it configures a brand new Ubuntu machine to the requirements asked in this task
 
-```sh
+```
 sylvain@ubuntu$ curl -sI 34.198.248.145/redirect_me/
 HTTP/1.1 301 Moved Permanently
 Server: nginx/1.4.6 (Ubuntu)
@@ -125,7 +128,7 @@ Location: https://www.youtube.com/watch?v=QH2-TGUlwu4
   - The page must contain the string Ceci n'est pas une page
   - Using what you did with 3-redirection, write 4-not_found_page_404 so that it configures a brand new Ubuntu machine to the requirements asked in this task
 
-```sh
+```
 sylvain@ubuntu$ curl -sI 34.198.248.145/xyz
 HTTP/1.1 404 Not Found
 Server: nginx/1.4.6 (Ubuntu)
@@ -150,6 +153,8 @@ Ceci n'est pas une page
   - When querying Nginx at its root / with a GET request (requesting a page) using curl, it must return a page that contains the string Holberton School
   - The redirection must be a “301 Moved Permanently”
   - Your answer file should be a Puppet manifest containing commands to automatically configure an Ubuntu machine to respect above requirements
+
+</details>
 
 ## Author
 

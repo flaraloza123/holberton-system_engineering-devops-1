@@ -30,11 +30,14 @@ Other Man Pages
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### [0. Hello World](./0-hello_world)
 
 - Write a script that prints “Hello, World”, followed by a new line to the standard output.
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ./0-hello_world
 Hello, World
 julien@ubuntu:/tmp/h$ ./0-hello_world | cat -e
@@ -45,7 +48,7 @@ Hello, World$
 
 - Write a script that displays a confused smiley "(Ôo)'.
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ./1-confused_smiley
 "(Ôo)'
 ```
@@ -54,7 +57,7 @@ julien@ubuntu:/tmp/h$ ./1-confused_smiley
 
 - Display the content of the /etc/passwd file.
 
-```sh
+```
 $ ./2-hellofile
 ##
 # User Database
@@ -85,7 +88,7 @@ _krbfast:*:246:-2:Kerberos FAST Account:/var/empty:/usr/bin/false
 
 - Display the content of /etc/passwd and /etc/hosts
 
-```sh
+```
 $ ./3-twofiles
 ##
 # User Database
@@ -115,7 +118,7 @@ daemon:*:1:1:System Services:/var/root:/usr/bin/false
 
 - Display the last 10 lines of /etc/passwd
 
-```sh
+```
 $ ./4-lastlines
 _assetcache:*:235:235:Asset Cache Service:/var/empty:/usr/bin/false
 _coremediaiod:*:236:236:Core Media IO Daemon:/var/empty:/usr/bin/false
@@ -133,7 +136,7 @@ _krbfast:*:246:-2:Kerberos FAST Account:/var/empty:/usr/bin/false
 
 - Display the first 10 lines of /etc/passwd
 
-```sh
+```
 $ ./5-firstlines
 ##
 # User Database
@@ -152,7 +155,7 @@ $ ./5-firstlines
 - Write a script that displays the third line of the file iacta.
   - You’re not allowed to use sed
 
-```sh
+```
 julien@ubuntu:/tmp/h$ cat iacta
 Alea iacta est
 
@@ -176,7 +179,7 @@ Alea iacta est ("The die is cast") is a Latin phrase attributed by Suetonius
 
 - Write a shell script that creates a file named exactly \*\\'"Holberton School"\'\\\*\$\?\*\*\*\*\*:) containing the text Holberton School ending by a new line.
 
-```sh
+```
 julien@production-503e7013:~/shell$ ls && ./7-file && ls -l && cat -e \\*
 0-mac_and_cheese 7-file 7-file~ Makefile
 total 20
@@ -192,7 +195,7 @@ Holberton School$
 
 - Write a script that writes into the file ls_cwd_content the result of the command ls -la. If the file ls_cwd_content already exists, it should be overwritten. If the file ls_cwd_content does not exist, create it.
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ls -la
 total 20
 drwxrwxr-x  2 julien julien 4096 Sep 20 18:18 .
@@ -223,7 +226,7 @@ drwxrwxrwt 13 root   root   4096 Sep 20 18:18 ..
 
 - Write a script that duplicates the last line of the file iacta
 
-```sh
+```
 julien@ubuntu:/tmp/h$ cat iacta
 Alea iacta est
 
@@ -262,7 +265,7 @@ Read more: https://en.wikipedia.org/wiki/Alea_iacta_est
 
 - Write a script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.
 
-```sh
+```
 julien@ubuntu:/tmp/h$ ls -lR
 .:
 total 24
@@ -304,7 +307,7 @@ total 0
   - The current and parent directories should not be taken into account
   - Hidden directories should be counted
 
-```sh
+```
 julien@production-503e7013:~/shell/fun_with_the_shell$ ls -lRa
 .:
 total 32
@@ -351,7 +354,7 @@ julien@production-503e7013:~/shell/fun_with_the_shell$ ./11-directories
   - One file per line
   - Sorted from the newest to the oldest
 
-```sh
+```
 alex@ubuntu:/tmp$ ls -l
 total 7
 -rwxr-xr-x 1 501 dialout  32 Sep 27 23:51 0-hello_world
@@ -388,7 +391,7 @@ alex@ubuntu:/tmp$ ./12-newest_files
   - Output format: One line, one word
   - Words should be sorted
 
-```sh
+```
 julien@ubuntu:/tmp/0x02$ cat list
 C#
 C
@@ -426,7 +429,7 @@ Go
 
 - Display lines containing the pattern “root” from the file /etc/passwd
 
-```sh
+```
 $ ./14-findthatword
 root:*:0:0:System Administrator:/var/root:/bin/sh
 daemon:*:1:1:System Services:/var/root:/usr/bin/false
@@ -437,7 +440,7 @@ _cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
 
 - Display the number of lines that contain the pattern “bin” in the file /etc/passwd
 
-```sh
+```
 $ ./15-countthatword
 81
 ```
@@ -446,7 +449,7 @@ $ ./15-countthatword
 
 - Display lines containing the pattern “root” and 3 lines after them in the file /etc/passwd
 
-```sh
+```
 $ ./16-whatsnext
 root:*:0:0:System Administrator:/var/root:/bin/sh
 daemon:*:1:1:System Services:/var/root:/usr/bin/false
@@ -464,7 +467,7 @@ _dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false
 
 - Display all the lines in the file /etc/passwd that do not contain the pattern “bin”
 
-```sh
+```
 $ ./17-hidethisword
 ##
 # User Database
@@ -483,7 +486,7 @@ $ ./17-hidethisword
 - Display all lines of the file /etc/ssh/sshd_config starting with a letter.
   - include capital letters as well
 
-```sh
+```
 $ ./18-letteronly
 SyslogFacility AUTHPRIV
 AuthorizedKeysFile  .ssh/authorized_keys
@@ -496,7 +499,7 @@ Subsystem   sftp    /usr/libexec/sftp-server
 
 - Replace all characters A and c from input to Z and e respectively.
 
-```sh
+```
 julien@ubuntu:/tmp/0x02$ echo 'Replace all characters `A` and `c` from input to `Z` and `e`.' | ./19-AZ
 Replaee all eharaeters `Z` and `e` from input to `Z` and `e`.
 ```
@@ -505,7 +508,7 @@ Replaee all eharaeters `Z` and `e` from input to `Z` and `e`.
 
 - Create a script that removes all letters c and C from input.
 
-```sh
+```
 julien@ubuntu:/tmp/0x02$ echo Chicago | ./20-hiago
 hiago
 ```
@@ -514,7 +517,7 @@ hiago
 
 - Write a script that reverse its input.
 
-```sh
+```
 julien@ubuntu:/tmp/0x02$ echo "Reverse" | ./21-reverse
 esreveR
 ```
@@ -524,7 +527,7 @@ esreveR
 - Write a script that displays all users and their home directories, sorted by users.
   - Based on the the /etc/passwd file
 
-```sh
+```
 julien@ubuntu:/tmp/0x02$ cat /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
@@ -623,7 +626,7 @@ www-data:/var/www
   - The listing should end with a new line
   - You are not allowed to use basename, grep, egrep, fgrep or rgrep
 
-```sh
+```
 ubuntu@ip-172-31-63-244:~/holbertonschool$ ls -laR
 .:
 total 64
@@ -709,7 +712,7 @@ rudy_rigot.gif
   - The listing should end with a new line
   - You are not allowed to use basename, grep, egrep, fgrep or rgrep
 
-```sh
+```
     julien@production-503e7013:~/shell/fun_with_the_shell$ ls -Rla
     .:
     total 28
@@ -760,7 +763,7 @@ rudy_rigot.gif
   - The ‘decoded’ message has to end with a new line
   - You are not allowed to use grep, egrep, fgrep or rgrep
 
-```sh
+```
 julien@ubuntu:/tmp/0x02$ cat An\ Acrostic
 Elizabeth it is in vain you say
 Love not"—thou sayest it in so sweet a way:
@@ -781,7 +784,7 @@ ELIZABETH
   - Order by number of requests, most active host or IP at the top
   - You are not allowed to use grep, egrep, fgrep or rgrep
 
-```sh
+```
 julien@ubuntu:/tmp/0x02$ head nasa_19950801.tsv
 host    logname time    method  url response    bytes   referer useragent
 pppa006.compuserve.com  -   807256800   GET /images/launch-logo.gif 200 1713
@@ -806,6 +809,8 @@ gw1.att.com
 arc.dental.upenn.edu
 131.110.62.74
 ```
+
+</details>
 
 ## Author
 

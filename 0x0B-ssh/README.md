@@ -17,6 +17,9 @@
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### [0. Use a private key](./0-use_a_private_key)
 
 - Write a Bash script that uses ssh to connect to your server using the private key ~/.ssh/holberton with the user ubuntu.
@@ -25,7 +28,7 @@
   - You cannot use -l
   - You do not need to handle the case of a private key protected by a passphrase
 
-```sh
+```
 sylvain@ubuntu$ ./0-use_a_private_key
 Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-45-generic x86_64)
 
@@ -54,7 +57,7 @@ Connection to 8.8.8.8 closed.
   - Number of bits in the created key to be created 4096
   - The created key must be protected by the passphrase betty
 
-```sh
+```
 sylvain@ubuntu$ ls
 1-create_ssh_key_pair
 sylvain@ubuntu$ ./1-create_ssh_key_pair
@@ -85,7 +88,7 @@ sylvain@ubuntu$ ls
   - Your SSH client configuration must be configured to use the private key ~/.ssh/holberton
   - Your SSH client configuration must be configured to refuse to authenticate using a password
 
-```sh
+```
 sylvain@ubuntu$ ssh -v ubuntu@98.98.98.98
 OpenSSH_6.6.1, OpenSSL 1.0.1f 6 Jan 2014
 debug1: Reading configuration data /etc/ssh/ssh_config
@@ -154,13 +157,15 @@ Let’s practice using Puppet to make changes to our configuration file. Just as
 - Your SSH client configuration must be configured to use the private key ~/.ssh/holberton
 - Your SSH client configuration must be configured to refuse to authenticate using a password
 
-```sh
+```
 vagrant@ubuntu-xenial:~$ sudo puppet apply puppet_ssh_config.pp
 Notice: Compiled catalog for ubuntu-xenial in environment production in 0.11 seconds
 Notice: /Stage[main]/Main/File_line[Turn off passwd auth]/ensure: created
 Notice: /Stage[main]/Main/File_line[Declare identity file]/ensure: created
 Notice: Finished catalog run in 0.03 seconds
 ```
+
+</details>
 
 ## Author
 

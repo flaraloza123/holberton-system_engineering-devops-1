@@ -14,6 +14,11 @@ General
 - All files are created and compiled on Ubuntu 14.04.4 LTS
 - All files are linted with Shellcheck
 
+## Tasks
+
+<details>
+<summary>View Contents</summary>
+
 ### [0. Localhost](./0-localhost)
 
 - What is localhost?
@@ -36,7 +41,7 @@ General
   - localhost resolves to 127.0.0.2
   - facebook.com resolves to 8.8.8.8.
 
-```sh
+```
 sylvain@ubuntu$ ping localhost
 PING localhost (127.0.0.1) 56(84) bytes of data.
 64 bytes from localhost (127.0.0.1): icmp_seq=1 ttl=64 time=0.012 ms
@@ -77,7 +82,7 @@ rtt min/avg/max/mdev = 8.065/8.065/8.065/0.000 ms
 
 - Write a Bash script that displays all active IPv4 IPs on the machine it’s executed on.
 
-```sh
+```
 sylvain@ubuntu$ ./3-show_attached_IPs | cat -e
 10.0.2.15$
 127.0.0.1$
@@ -91,7 +96,7 @@ Terminal 0
 
 Starting my script.
 
-```sh
+```
 sylvain@ubuntu$ sudo ./4-port_listening_on_localhost
 ```
 
@@ -99,7 +104,7 @@ Terminal 1
 
 Connecting to localhost on port 98 using telnet and typing some text.
 
-```sh
+```
 sylvain@ubuntu$ telnet localhost 98
 Trying 127.0.0.2...
 Connected to localhost.
@@ -112,11 +117,13 @@ Terminal 0
 
 Receiving the text on the other side.
 
-```sh
+```
 sylvain@ubuntu$ sudo ./4-port_listening_on_localhost
 Hello world
 test
 ```
+
+</details>
 
 ## Author
 

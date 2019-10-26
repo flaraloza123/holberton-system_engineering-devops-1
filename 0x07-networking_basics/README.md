@@ -41,6 +41,9 @@ TCP/UDP
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### [0. OSI model](./0-OSI_model)
 
 What is the OSI model?
@@ -112,7 +115,7 @@ Which statement is correct for the TCP worker:
   - That only shows listening sockets
   - That shows the PID and name of the program to which each socket belongs
 
-```sh
+```
 sylvain@ubuntu$ sudo ./4-TCP_and_UDP_ports
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
@@ -148,7 +151,7 @@ unix  2      [ ACC ]     SEQPACKET  LISTENING     7156     378/systemd-udevd   /
   - Displays Requirements: 5-is_the_host_on_the_network {IP_ADDRESS} if no argument passed
   - Ping the IP 5 times
 
-```sh
+```
 sylvain@ubuntu$ ./5-is_the_host_on_the_network 8.8.8.8
 PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 64 bytes from 8.8.8.8: icmp_seq=1 ttl=63 time=12.9 ms
@@ -164,6 +167,8 @@ sylvain@ubuntu$
 sylvain@ubuntu$ ./5-is_the_host_on_the_network
 Requirements: 5-is_the_host_on_the_network {IP_ADDRESS}
 ```
+
+</details>
 
 ## Author
 

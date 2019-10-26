@@ -13,6 +13,9 @@
 
 ## Tasks
 
+<details>
+<summary>View Contents</summary>
+
 ### [0. HTTPS ABC](./0-https_abc)
 
 - What is HTTPS?
@@ -59,7 +62,7 @@
     - Nonexistent domain names
     - Nonexistent subdomains
 
-```sh
+```
 sylvain@ubuntu$ dig www.holberton.online | grep -A1 'ANSWER SECTION:'
 ;; ANSWER SECTION:
 www.holberton.online.   87  IN  A   54.210.47.110
@@ -94,7 +97,7 @@ The subdomain web-02 is a A record and points to 54.89.38.100
   - When querying the root of your domain name, the page returned must contain Holberton School
   - Share your HAproxy config as an answer file (/etc/haproxy/haproxy.cfg)
 
-```sh
+```
 sylvain@ubuntu$ curl -sI https://www.holberton.online
 HTTP/1.1 200 OK
 Server: nginx/1.4.6 (Ubuntu)
@@ -119,7 +122,7 @@ Holberton School for the win!
   - HAproxy should redirect HTTP traffic to HTTPS
   - Share your HAproxy config as an answer file (/etc/haproxy/haproxy.cfg) \*
 
-```sh
+```
 sylvain@ubuntu$ curl -sIL http://www.holberton.online
 HTTP/1.1 301 Moved Permanently
 Content-length: 0
@@ -136,6 +139,8 @@ ETag: "58abea7c-1e"
 X-Served-By: 03-web-01
 Accept-Ranges: bytes
 ```
+
+</details>
 
 ## Author
 
